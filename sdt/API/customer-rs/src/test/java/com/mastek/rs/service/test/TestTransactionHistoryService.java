@@ -41,7 +41,6 @@ public class TestTransactionHistoryService
 			e.printStackTrace();
 		}
 		
-		
 	}
 
 }
