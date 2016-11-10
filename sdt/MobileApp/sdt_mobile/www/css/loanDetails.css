@@ -1,0 +1,249 @@
+
+.ui-li-aside{
+	right: 1em !important;
+	top: 0.7em !important;
+}
+
+.ui-li-border{
+	border-color: #ffffff !important;
+}
+
+.ui-li-highlighted{
+	background-color:#e8f5fc !important;
+}
+
+a{
+	text-decoration:none;
+}
+.ui-body-c {
+    
+    border: none !important;
+	margin-top: 0.5em;
+	
+	}
+/*	
+td,th{
+padding-left: 14px !important;
+}
+th.th1
+{
+	vertical-align: middle;
+}
+th.th2
+{
+	text-align: right;
+	vertical-align: middle;
+}
+th.th3
+{
+	text-align: right !important;
+	vertical-align: middle !important;
+}
+*/
+tr.header
+{
+	/*height: 38px;*/
+}
+div.table-data{
+	background-color: transparent !important;
+}
+
+#noList {
+    padding-left: 10px;
+    text-overflow: none;
+    word-break: keep-all;
+	color: #939393;
+}
+.LoanDetailsBorder{
+    border-top: 1px solid #e2e2e2 !important;
+}
+
+.tr-highlighted{
+	background-color:#ebebeb !important;
+	/*background-color:white !important;*/
+}
+
+.fontRed{
+      color: red;
+}
+
+img.cardIcon{
+    height: 12px;
+    width: 16px;
+    /* margin-left: 129px; */
+    position: relative;
+}
+span.card{
+        position: relative;
+    /* left: 5px; */
+    margin-left: 10px;
+    /* margin-top: -33px; */
+    top: 1px;
+}
+
+#header {
+	position: absolute;
+	z-index: 2;
+	/*top: 243px;*/
+	/*margin-left: 5px;*/
+	/*width:100%;*/
+	
+}
+
+.nopadding{
+    padding-left: 0px !important;
+}
+table#tblData {
+    display: table;
+    width: 100%;
+}
+table#tblData thead, table#tblData tbody {
+    float: left;
+    width: 100%;
+}
+table#tblData tbody {
+    overflow-x: hidden;
+    max-height: calc(100vh - 254px);
+    min-height: calc(100vh - 254px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+table#tblData tr {
+    width: 100%;
+    display: table;
+    text-align: left;
+}
+    table#tblData th#theaderPay {
+		width: 43%;
+    }
+	table#tblData th#theaderActualAmt, table#tblData th#theaderArrears {
+		width: 27%;
+		text-align: right;
+    }
+	table#tblData td.payDateCol{
+		width: 43%;
+	}
+	table#tblData td.amtCol,table#tblData td.arrearsCol{
+		width: 20%;
+	}
+	table#tblData td.nopadding{
+		width: 7%;
+	}
+	
+table#tblData tfoot td.th3{
+    text-align: right;
+    padding-right: 33px;
+}
+
+.ui-chkbox{
+	/*width: 15px !important;*/
+	/*height: 29px !important;*/
+}
+input[type="checkbox"] {
+    display: block;
+}
+.icon-img{
+	width:20px
+	/*vertical-align: middle;*/
+}
+
+.li-heading{
+	text-align: center !important;
+}
+
+.amt-css{
+	text-align: right !important;
+}
+
+    table#balTransTblData {
+        display: table;
+        width: 100%;
+		table-layout:fixed;
+    }
+    table#balTransTblData thead, table#balTransTblData tbody {
+        float: left;
+width: 100%;
+}
+    table#balTransTblData tbody {
+        overflow: auto;
+        max-height: calc(100vh - 218px);
+	 min-height: calc(100vh - 218px);
+}
+    table#balTransTblData tr {
+        width: 100%;
+        display: table;
+        text-align: left;
+}
+   /* table#tblData th, table#tblData td {
+        width: 28%;
+    }*/
+	
+	
+table#balTransTblData td {overflow:hidden;}/*Hide text outside the cell.*/
+
+
+/*
+table#balTransTblData th:nth-of-type(1),table#balTransTblData tfoot td:nth-of-type(1), table#balTransTblData td:nth-of-type(1) {width:23%;}
+table#balTransTblData th:nth-of-type(2),table#balTransTblData tfoot td:nth-of-type(2) ,table#balTransTblData td:nth-of-type(2) {width:12%;}
+table#balTransTblData th:nth-of-type(3),table#balTransTblData tfoot td:nth-of-type(3),table#balTransTblData td:nth-of-type(3) {width:25%;}
+table#balTransTblData th:nth-of-type(4),table#balTransTblData tfoot td:nth-of-type(4),table#balTransTblData td:nth-of-type(4) {width:20%;}
+table#balTransTblData th:nth-of-type(5),table#balTransTblData tfoot td:nth-of-type(5),table#balTransTblData td:nth-of-type(5) {width:10%;}
+table#balTransTblData th:nth-of-type(6),table#balTransTblData tfoot td:nth-of-type(6),table#balTransTblData td:nth-of-type(6) {width:10%;}*/
+
+	
+/*table#balTransTblData th:nth-of-type(1),table#balTransTblData tfoot td:nth-of-type(1), table#balTransTblData td:nth-of-type(1) {width:23%;}
+table#balTransTblData th:nth-of-type(2),table#balTransTblData tfoot td:nth-of-type(2),table#balTransTblData td:nth-of-type(2) {width:32%;}
+table#balTransTblData th:nth-of-type(4),table#balTransTblData tfoot td:nth-of-type(4),table#balTransTblData td:nth-of-type(3) {width:25%;}
+table#balTransTblData th:nth-of-type(5),table#balTransTblData tfoot td:nth-of-type(5),table#balTransTblData td:nth-of-type(4) {width:10%;}
+table#balTransTblData th:nth-of-type(6),table#balTransTblData tfoot td:nth-of-type(6),table#balTransTblData td:nth-of-type(5) {width:10%;}*/
+
+	table#balTransTblData th.th3{
+		text-align: right;
+	}
+
+	table#balTransTblData tfoot td.th3{
+	text-align: right;
+    //padding-right: 40px;
+}
+    
+input {
+    -webkit-border-radius:0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    border-radius:0;
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+input[type=number]{
+	/*direction: rtl;*/
+}
+    
+.elipssis{
+white-space: nowrap; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+width: 80px;
+}
+    
+.table-stroke tbody td {
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+table#balTransTblData.table-stroke tbody td {
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.ui-content{
+    padding-bottom: 6px;
+    overflow:hidden;
+}
+
+li.cust{
+    height: 33px;
+    max-height: 33px;
+}
+
+.ui-content .ui-listview-inset{
+    margin-bottom: -7px;
+}

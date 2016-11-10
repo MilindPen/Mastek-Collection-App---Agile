@@ -1,0 +1,164 @@
+/***************Agent/BM input box*****************/
+input#AgentFilter, #JourneyFilter, #journeySelectionFilter, #UserJourneyFilter, #BranchFilter{
+	width: 250px;
+	
+}
+input#AgentFilter, #UserJourneyFilter, #JourneyFilter, #journeySelectionFilter, #BranchFilter, .input-group-addon, .input-group-btn{
+	border: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 0px !important;
+	background-color: #fff;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+.form-control:focus{
+	-webkit-box-shadow:none;
+}
+.input-group-addon, .input-group-btn{
+	width: 0% !important; 
+}
+
+/***************Journey input box*****************/
+input#JourneyFilter, input#journeySelectionFilter{
+	width: 250px;
+}
+input#JourneyFilter, input#journeySelectionFilter, .input-group-addon, .input-group-btn{
+	border: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 0px !important;
+}
+.form-control:focus{
+	-webkit-box-shadow:none;
+}
+.input-group-addon, .input-group-btn{
+	width: 0% !important; 
+}
+
+
+
+td.select{
+	width: 20px;	
+}
+div.weekSelectionRow{
+	background-color: white;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.submitBtnRow{
+	margin-left: -20px;
+    background-color: white;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+select#SDTWeekSelection{
+	background-color: #f6f6f6;
+}
+#AgentFilter,#UserJourneyFilter,#JourneyFilter,#BranchFilter,#searchBox{
+	background-color: #fff;
+	/* box-shadow: none !important;
+	-webkit-box-shadow: none !important; */
+}
+img#userJourneySearchIcon, img#journeySearchIcon, img#userSearchIcon, img#branchSearchIcon{
+	width:14px;
+	height:14px;
+}
+div.userDataColumnWell, div.journeyDataColumnWell{
+	background-color: white;
+    border-radius: 0px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding: 19px;
+	min-height: 430px;
+}
+div.userDataColumnWell{
+	margin-left: -15px;
+    margin-right: -10px;
+}
+div.journeyDataColumnWell{
+    margin-left: -5px;
+    margin-right: -15px;
+}
+div.submitBtnColumn6{
+	background-color: #f6f6f6;
+    margin-left: -15px;
+}
+div.noBtnColumn6{
+	background-color: #f6f6f6;
+}
+.journeySelectionWell{
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+.journeySelectionTbody{
+	height: 40vh !important;
+}
+.journeySelectionWell{
+	margin-top: 20px !important;
+}
+.branchWeekInfo{
+	margin-top: -20px;
+}
+
+
+/**************scrollable table**********************/
+ .userTable, .journeyTable, .journeySelectionTable 
+ {
+    width: 100%;
+ }
+
+ .userTable thead,.userTable tbody,.userTable tfoot,.userTable tr,.userTable td,.userTable th,
+ .journeyTable thead,.journeyTable tbody,.journeyTable tfoot, .journeyTable tr,.journeyTable td,.journeyTable th,
+.journeySelectionTable thead,.journeySelectionTable tbody,.journeySelectionTable tfoot, .journeySelectionTable tr,.journeySelectionTable td,.journeySelectionTable th 
+ { display: block; }
+
+ .userTable tr:after, .journeyTable tr:after , .journeySelectionTable tr:after
+ {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.userTable tbody , .journeyTable tbody, .journeySelectionTable tbody
+{
+	height: 200px;
+	overflow-y: scroll;
+}
+
+
+.userTable tbody td,.userTable thead th,.userTable tfoot td ,
+.journeyTable  tbody td,.journeyTable thead th,.journeyTable tfoot td,
+.journeySelectionTable  tbody td,.journeySelectionTable thead th,.journeySelectionTable tfoot td
+{		
+	float: left;
+}   
+	
+.userTable th:nth-of-type(1), .userTable td:nth-of-type(1) {width:10%;}
+.userTable th:nth-of-type(2), .userTable td:nth-of-type(2) {width:35%;}
+.userTable th:nth-of-type(3), .userTable td:nth-of-type(3) {width:25%;}
+.userTable th:nth-of-type(4), .userTable td:nth-of-type(4) {width:30%;}
+/*.userTable th:nth-of-type(5), .userTable td:nth-of-type(5) {width:35%;}*/
+
+.userTable td:nth-of-type(3) {padding-left: 15px;}
+.userTable td:nth-of-type(4) {padding-left: 20px;}
+
+.journeyTable th:nth-of-type(1), .journeyTable td:nth-of-type(1) {width:20%;}
+.journeyTable th:nth-of-type(2), .journeyTable td:nth-of-type(2) {width:40%;}
+.journeyTable th:nth-of-type(3), .journeyTable td:nth-of-type(3) {width:40%;}
+/*.journeyTable th:nth-of-type(4), .journeyTable td:nth-of-type(4) {width:31%;}*/
+
+.journeyTable td:nth-of-type(2) {padding-left: 10px;}
+.journeyTable td:nth-of-type(3) {padding-left: 17px;}
+
+.journeySelectionTable th:nth-of-type(1) {width:3%;}
+.journeySelectionTable th:nth-of-type(2) {width:10%;}
+.journeySelectionTable th:nth-of-type(3) {width:87%;}
+.journeySelectionTable td:nth-of-type(1) {width:3%;}
+.journeySelectionTable td:nth-of-type(2) {width:10%;}
+.journeySelectionTable td:nth-of-type(3) {width:87%;}
+
+/*table#userTable th:nth-of-type(1),table#userTable tfoot td:nth-of-type(1), table#userTable td:nth-of-type(1) {width:23%;}
+table#userTable th:nth-of-type(2),table#userTable tfoot td:nth-of-type(2),table#userTable td:nth-of-type(2) {width:32%;}
+table#userTable th:nth-of-type(4),table#userTable tfoot td:nth-of-type(4),table#userTable td:nth-of-type(3) {width:25%;}
+table#userTable th:nth-of-type(5),table#userTable tfoot td:nth-of-type(5),table#userTable td:nth-of-type(4) {width:10%;}
+table#userTable th:nth-of-type(6),table#userTable tfoot td:nth-of-type(6),table#userTable td:nth-of-type(5) {width:10%;}*/

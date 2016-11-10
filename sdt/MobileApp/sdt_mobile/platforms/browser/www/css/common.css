@@ -1,0 +1,399 @@
+@CHARSET "ISO-8859-1";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Jan, 2016, 12:18:10 AM
+    Author     : Dharav12871
+*/
+
+/****************************************common font styles*******************************************/
+.font14px{
+	font-size: 14px !important;
+	font-weight: normal !important;
+}
+.font17px{
+	font-size: 17px !important;
+	font-weight: normal !important;
+}
+.font18px{
+	font-size: 18px !important;
+	font-weight: normal !important;
+}
+.font20px{
+	font-size: 20px !important;
+	font-weight: normal !important;
+}
+.fontBold{
+	font-weight: bold !important;
+}
+.fontNormal{
+	font-weight: normal !important;
+}
+
+/***********************************************Loader************************************************/
+  #loading-indicator {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  z-index:1102;
+  opacity:1 !important;
+}
+#disablingDiv
+{
+    /* Do not display it on entry */
+    display: none; 
+ 
+    /* Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page */
+    z-index:1002;
+
+    /* make it cover the whole screen */
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+
+    /* make it white but fully transparent */
+    background-color: white; 
+    opacity:.8; 
+    filter: alpha(opacity=00); 
+}
+/***********************************************header************************************************/
+body.ui-mobile-viewport{
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html head + body .ui-btn.ui-btn-f:focus{
+    box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+}
+
+.customheader{
+    font:16px arial;
+    background-color:white !important;
+    text-overflow: none;
+    text-transform: uppercase; 
+    display:inline-block;
+}
+.customheader > h1{
+    font-weight:normal;
+       
+}
+.ui-header .ui-title, .ui-footer .ui-title{
+    margin:0 10%;   
+}
+
+
+/***********************************************side menu************************************************/
+div.overlay{
+    width:65%;
+    text-shadow: 3px /*{a-body-shadow-x}*/ 3px /*{a-body-shadow-y}*/ 3px /*{a-body-shadow-radius}*/ none /*{a-body-shadow-color}*/ !important;
+    color:black;
+}
+li.menu, li.ui-btn-d ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all{
+    color:black !important;
+    font: normal 12px arial !important;
+    padding-top:15px !important;
+    padding-bottom:15px !important;
+    border-radius: 0px;
+}
+div.agent{
+    font-family: arial; text-transform: capitalize;
+    color:black;
+}
+div.journey{
+    font-family: arial;  text-transform: capitalize;
+    color:black;
+}
+div.weekDate{
+	color: #626161;
+	margin-top: 14px;
+}
+div.logo{
+    width: 100%;
+    text-align: left;
+    /* margin-top: 10px; */
+    background-color: #fbfae5;
+    padding-bottom: 20px;
+    height: 130px;
+}
+div.logo > img{
+     width:90px;
+     height:90px; 
+	     margin-top: 10px;
+		 
+}
+.ui-alt-icon.ui-icon-carat-r:after{
+	background-image: none;
+}
+img#syncIcon, #dashboardIcon{
+	width: 12px;
+    height: 12px;
+    margin-top: 16px;
+	margin-left: 10px;
+}
+img#dashboardIcon{
+	width: 18px;
+}
+span.menuItems{
+	margin-left:32px;
+}
+.ui-panel-inner{
+	padding:0px;
+}
+.ui-panel-inner > .ui-listview{
+	margin: 0em;
+}
+div#agentDetails{
+    text-align: left;
+    padding-top: 38px;
+    width: 100%;
+    padding-left: 12px;
+}
+.ui-listview > .ui-li-static.ui-li-has-thumb{
+	    min-height: 0em;
+    padding-left: 1em;
+	    
+	}
+li#menuDashboard{
+	border-top: none;	
+}
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left{
+	    left: 0em !important;
+    z-index: 1000 !important;
+}
+.ui-panel-dismiss{
+	    background-color: black !important;
+    opacity: 0.6 !important;
+}
+ /***********************************************login page************************************************/
+/*
+.loginDiv{
+    position:absolute;
+    left: 15px;
+    bottom: 30%; 
+    min-width: 60%;
+}
+
+.login span{
+    font-weight: 18px;
+}
+
+.loginInputs{
+    border: none;   
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.ui-field-contain .ui-corner-all{
+    border-radius: 0px;
+    border: 1px solid #1f9bde;
+    box-shadow: inset 0 0px 0px;
+}
+
+.ui-page-theme-c .ui-btn{
+    background-color: #1f9bde;
+    border-color: #fff;
+    width: 50%;
+    border-radius: 0px;
+    color: #fff;
+    max-width: 150px;
+}
+.ui-mobile label{
+    font-size: 18px;
+    color: #1f9bde;
+    margin: 0px;
+}
+
+.logo-img{
+    position:absolute;
+    top: 30px;
+}
+
+.ui-page-theme-c a{
+    font-weight: normal;
+    font-size: 12px;
+}
+div.noArea{
+    display:none;
+    width:80%;
+    height:auto;
+    position:absolute;
+    top:8%;
+    background-color: #fdf9e0;
+    color: #87650c;
+    font-family: arial;
+    font-size: 16px;
+    padding:10px;
+    text-align:center;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    border: 2px solid white;
+    overflow:hidden;
+    z-index:999 !important;
+    padding-top: 14px;
+    padding-left: 24px;
+    margin-left:2%;
+    margin-right:2% !important;
+    background-image: url('images/warning.png');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: left;
+}
+div.error{
+    display:none;
+    width:80%;
+    height:auto;
+    position:absolute;
+    background-color: #f3dedd;
+    color: #9f0100;
+    font-family: arial;
+    font-size: 16px;
+    padding:10px;
+    text-align:center;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    border: 2px solid white;
+    overflow:hidden;
+    z-index:999 !important;
+    padding-top: 14px;
+    padding-left: 24px;
+    margin-left:4%;
+    margin-right:2% !important;
+    background-image: url('images/failure.png');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: left;
+}
+
+#loading-indicator {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  z-index:1102;
+  opacity:1 !important;
+}
+.loginOverlayDiv
+{
+    Do not display it on entry
+    display: none; 
+ 
+    Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page
+    z-index:100;
+     
+    make it cover the whole screen
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+ 
+    make it white but fully transparent
+    background-color: white; 
+    opacity:.5; 
+    filter: alpha(opacity=00); 
+}
+ */
+
+/***********************************************dashboard page************************************************/
+/* span.dashboardDailyDay{
+    border: 2px solid gray;
+    font-size: 18px;
+    border-radius: 50% !important;
+    margin-left: 1%;
+    position: relative;
+    padding: 5px 9px;
+    color: #6e696e;
+    top: 5px !important;
+    background-color:#e2e2e2;
+}
+span.dashboardDailyDaySelected{
+    border: 2px solid gray;
+    font-size: 18px;
+    border-radius: 50% !important;
+    margin-left: 1%;
+    position: relative;
+    padding: 5px 9px;
+    color: #6e696e;
+    background-color:#1f9bde;
+    top: 5px !important;
+}
+span.hide{
+    display:none;
+}
+.dashboardSelectDay{
+	margin-top: 24px;
+    margin-left: 14px;
+    margin-right: -170px;
+}
+div.dashboardSelectWeek{
+	position: absolute;
+	margin-top: 40px;
+    margin-left: 32%;
+} */
+
+/***********************************************scheduled customers page************************************************/
+.SCDWName{
+	font-size: 17px;
+    top: -4px;
+    font-weight: bold;
+    position: relative;
+    float: left;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;    
+}
+.SCDWAddress{
+	font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    line-height: 114%;
+}
+.SCDWAmount{
+	font-size: 16px;
+    float: right;
+    margin-top: 12px;
+    color: #0d9ae2;
+}
+.SCDWCalendarIcon{
+	height: 20px;
+    position: relative;
+}
+.dailyCalendarIcon{
+    top: 6px;
+    left: 10px;
+}
+.weeklyCalendarIcon{
+    left: -4px;
+}
+div.SCDWvgreen, div.SCDWvamber, div.SCDWvwhite, div.SCDWvred, div.SCDWvblue{
+    width:10px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:3px;
+    margin-right:44px;
+    line-height: auto;
+}
+div.SCDWvgreen{background-color: #14970d;}
+div.SCDWvamber{background-color: #ffb44f;}
+div.SCDWvred{background-color: #f3413f;}
+div.SCDWvwhite{background-color: #fff;}
+div.SCDWvblue{background-color: #1f9bde;}

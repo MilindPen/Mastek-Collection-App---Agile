@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>balancing</display-name>
+  
+ 
+ <context-param>
+		<param-name>authority</param-name>
+		<param-value>https://login.windows.net/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>tenant</param-name>
+		<param-value>sd-taylor.co.uk</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>BasicFilter</filter-name>
+		<filter-class>com.mastek.branchbalancing.login.BasicFilter</filter-class>
+		<init-param>
+			<param-name>client_id</param-name>
+			<param-value>5e1a7f6c-8723-45c1-bdab-6d0c59007e91</param-value>
+		</init-param>
+		<init-param>
+			<param-name>secret_key</param-name>
+			<param-value>GUA/9Kbp0hPjIZCUpvo/1A8diBf5CNQfOt3Z0f4OrmY=</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>BasicFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<url-pattern>/login/*</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/mvc-dispatcher-servlet.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+</web-app>

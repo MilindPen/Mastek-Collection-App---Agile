@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!--CSS files-->
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/sidemenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>
+        <!--Custom page css-->
+        <link href="css/dashboard.css" rel="stylesheet" type="text/css"/>
+        
+        <!--JS files-->	
+        <script src="js/lib/jquery.js" type="text/javascript"></script>
+        <script src="js/lib/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<script src="js/common/common.js" type="text/javascript"></script>
+        <script src="js/common/constants.js" type="text/javascript"></script>
+        <script src="js/common/dataStorage.js" type="text/javascript"></script>
+        <!--Custom page js-->
+        <script src="js/dashboard.js" type="text/javascript"></script>
+        
+
+    </head>    
+    <body>
+        <!--Page start-->
+        <div data-role="page" id="pageone">
+
+            <!--Side Menu-->
+            <div class="overlay" data-role="panel" id="overlayPanel" data-display="overlay"> 
+                <div class="logo">
+                    <img src="images/logo1.jpg" alt=""/>
+                </div>
+                <br>
+                <div class="agent">Agent Name</div>
+                <div class="area">Area: London</div>
+                <ul class="menu" data-role="listview" style="">
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Scheduled Customers</li>
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Unscheduled Customers</li>
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Leads</li>
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Profile</li>
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Help</li>
+                    <li class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = '#'">Select Area</li>
+                </ul>   
+            </div>
+
+            <!--Page header-->
+            <div data-role="header" class="customheader" data-position="fixed">
+                <h1>DASHBOARD</h1>
+                <!--<a href="#overlayPanel" data-transition="pop" data-rel="popup" data-icon="bars" data-role="button" data-position-to="#menu" data-inline="true" data-theme="g" class="ui-link ui-btn ui-btn-g ui-alt-icon ui-icon-bars ui-btn-icon-notext ui-btn-inline"></a>-->
+            </div>
+
+            <!--Page body-->
+            <div data-role="main" class="ui-content">
+                <div class="selectDay">
+                    <span id="day0" class="counter">T</span>
+                    <span id="hidden_day0" class="hide counter"></span>
+                    <span id="day1" class="counter">F</span>
+                    <span id="hidden_day1" class="hide counter"></span>
+                    <span id="day2" class="counter">S</span>
+                    <span id="hidden_day2" class="hide counter"></span>
+                    <span id="day3" class="counter">S</span>
+                    <span id="hidden_day3" class="hide counter"></span>
+                    <span id="day4" class="counter">M</span>
+                    <span id="hidden_day4" class="hide counter"></span>
+                    <span id="day5" class="counter">T</span>
+                    <span id="hidden_day5" class="hide counter"></span>
+                    <span id="day6" class="counter">W</span>
+                    <span id="hidden_day6" class="hide counter"></span>
+                </div>
+                <div class="selectWeek">
+                	<a href="" class="weeklyView">Week</a>
+                </div>
+            </div>
+
+            <!--Page footer-->
+            <div data-role="footer" id="ftrMain" data-position="fixed">
+
+            </div>
+
+        </div>
+        <!--Page end-->
+		<script src="js/lib/date.js" type="text/javascript"></script>
+        <script src="js/lib/dateFormatter.js" type="text/javascript"></script>
+        
+    </body>
+</html>

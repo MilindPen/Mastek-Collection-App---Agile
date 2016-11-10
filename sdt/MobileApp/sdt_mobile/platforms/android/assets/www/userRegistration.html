@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        
+        <!--CSS files-->
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/userRegistration.css" rel="stylesheet" type="text/css"/>
+        
+        <!--JS files-->
+        <script type="text/javascript" src="cordova.js"></script>
+		<script src="js/lib/jquery.js" type="text/javascript"></script>
+		<script src="js/lib/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<script src="js/lib/date.js" type="text/javascript"></script>
+		<script src="js/lib/dateFormatter.js" type="text/javascript"></script>
+		<script src="js/common/common.js" type="text/javascript"></script>
+		<script src="js/common/constants.js" type="text/javascript"></script>
+		<script src="js/common/dataStorage.js" type="text/javascript"></script>
+		<script src="js/common/callService.js" type="text/javascript"></script>
+		<script src="js/lib/aes.js" type="text/javascript"></script>
+        <script src="js/userRegistration.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <div class="logo-img">
+            <img src="img/logo.png">
+        </div>
+        <div class="userreg">
+            <label id="reg-verify">To Register, verify your account details</label>
+            <label for="user-id">User ID</label>
+            <input type="number" pattern="[0-9]*" inputmode="numeric" id="user-id" value="" autocomplete="off" data-corners="false"/>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" value="" autocomplete="off" data-corners="false"/>
+            <button id="submit" class="userreg-next ui-btn ui-corner-all">Next</button>
+             
+        </div>
+                <img src="img/382.gif" id="loading-indicator" style="display:none" />
+		<div id="disablingDiv" ></div>
+    </body>
+</html>

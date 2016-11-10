@@ -1,0 +1,383 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 30, 2016, 3:19:19 PM
+    Author     : dharav12871
+*/
+/*div.dashboardDailyDay{
+    border: 2px solid #c5c5c5;
+    font-size: 18px;
+    border-radius: 50% !important;
+    margin-left: 6%;
+    position: relative;
+    padding: 5px 7px;
+    color: #0d9ae2;
+    top: 5px !important;
+    background-color:#fff;
+    display:inline;
+    text-align:center;
+}*/
+div.dashboardDailyDay{
+    border: 2px solid #c5c5c5;
+    font-size: 20px;
+    border-radius: 50% !important;
+    /* margin-left: 27%; */
+    position: absolute;
+    /* padding: 5px 7px; */
+    color: #0d9ae2;
+    /* top: 7px !important; */
+    left: 7px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+div#day0, div#date0{
+    left:7%;
+}
+div#day1, div#date1{
+    left:22%;
+}
+div#day2, div#date2{
+    left:37%;
+}
+div#day4, div#date4{
+    left:52%;
+}
+div#day5, div#date5{
+    left:67%;
+}
+div#day6, div#date6{
+    left:82%;
+}
+span.dashboardDailyDay{
+/*    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    left: 3px;
+    */
+        vertical-align: middle;
+    text-align: center;
+    position: relative;
+    left: 0px;
+    top: 3px;
+}
+div.dashboardDailyDaySelected{
+border: 2px solid #6f6f6f;
+    font-size: 20px;
+    border-radius: 50% !important;
+    position: absolute;
+    /* padding: 5px 7px; */
+    color: white;
+    left: 7px;
+    background-color: #6f6f6f;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+div.hide{
+    display:none;
+}
+.dashboardSelectDay{
+    margin-top: 11px;
+    /* margin-left: -14px; */
+    /* margin-right: -16px; */
+    /* position: relative; */
+    /* top: 12px; */
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+div.dashboardSelectWeek{
+	position: absolute;
+	margin-top: 40px;
+    margin-left: 32%;
+}
+div#tabs{
+    margin-top: -14px;
+    margin-left: -15px;
+    margin-right: -16px;
+}
+.ui-navbar {
+    max-width: 100%;
+    margin-left: -2px !important;
+    margin-right: -2px !important;
+}
+.ui-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    border: 0;
+    max-width: 100%;
+    overflow: visible;
+}
+.ui-content{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    overflow-y: auto;
+    max-height: calc(100vh - 96px);
+    border: 9px solid #e2e2e2;
+    min-height: calc(100vh - 90px);
+    position: relative;
+}
+a#weekly{
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    color: #0d9ae2 
+}
+a#daily{
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    color: #0d9ae2 
+}
+.ui-tabs{
+    padding: 0;
+}
+html head + body .ui-btn.ui-btn-c:hover,html head + body .ui-btn.ui-btn-c:active,html head + body .ui-btn.ui-btn-c.ui-btn-active{
+    background-color:#fff;
+    color:#000;
+}
+.ui-tabs-active.ui-state-active > a{
+    color: #000 !important;
+    border-bottom: 2px solid #000 !important;
+}
+span.card {
+        position: relative;
+    left: 5px;
+    /* margin-left: 10px; */
+    /* margin-top: -33px; */
+    top: 2px;
+}
+img.cardIcon {
+    height: 12px;
+    width: 16px;
+    /* margin-left: 129px; */
+    position: relative;
+}
+.dashboardUL2, .dashboardUL1{
+    margin-left: -1em !important;
+    margin-right: -1.1em !important;
+    margin-top: -1em !important;
+    /* width: 111%; */
+    /* position: relative; */
+    border-radius: 0px;
+    left: -14px;
+    right: -21px;
+    padding-right: -43px;
+}
+.dashboardUL1{
+    margin-top: 1em !important;
+}
+html body .ui-group-theme-f .ui-body-inherit{
+    border:0px;
+    color:#939393;
+}
+html body .ui-group-theme-c .ui-body-inherit{
+    color:#939393;
+}
+span.amount{
+    float:right;
+}
+
+span.green{
+    color:#14970d;
+}
+span.red{
+    color: #f3413f;
+}
+div.amount{
+display: inline;
+    float: right;
+	width: auto;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+div.redbox{
+    border: 0.1em solid #f3413f;
+    border-radius: 0.2em;
+}
+div.greenbox{
+    border:0.1em solid #14970d;
+    border-radius: 0.2em;
+}
+img.arrow{
+    height: 7px;
+    width: 5px;
+    float: right;
+    position: absolute;
+    right: 7px;
+    top: 17px;
+}
+span.label{
+    float:left;
+}
+.ui-listview > .ui-li-static.ui-li-has-thumb{
+    min-height: 0em;
+    padding-left: 1em;
+}
+div#dailyDashboard, div#weeklyDashboard{
+    display: none;
+}
+div.weekDisplay{
+        text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+div.btngroup{
+        /* padding-top: 1em; */
+    background-color: #c5c5c5;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-right: 12px;
+    /* margin-bottom: 9px; */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -14px;
+}
+span.black{
+    color: black;
+}
+span.amber{
+    color: #ffb44f;
+}
+html head + body .ui-btn.ui-btn-a:hover{
+    color: #1f9bde;
+}
+
+/*******************Progress bar*******************/
+.dailyBar-con, .weeklyBar-con {
+    background-color: #d0d0d0;
+    height: 0.6em;
+    /* margin-bottom: 1em; */
+    margin-top: 12px;
+    width: 40%;
+    float: right;
+    border-radius: 20px;
+}
+.dailyBar, .weeklyBar {
+    /* float: left; */
+    height: 100%;
+    /* width: 20%; */
+    border-radius: 20px;
+    /* margin-left: -16px; */
+}
+.dailyBar-one .dailyBar, .weeklyBar-one .weeklyBar {
+  background-color: #ccd626;
+  transition: width ease-in 0.5s;
+  -webkit-transition: width ease-in 0.5s;
+  -moz-transition: width ease-in 0.5s;
+  -o-transition: width ease-in 0.5s;
+}
+
+span.dailyCallsClosed, span.weeklyCallsClosed {
+float: left;
+    margin-top: -20px;
+    /* border-radius: 8px; */
+    /* top: 7px; */
+    /* z-index: 100; */
+}
+span.dailyTargetCalls, span.weeklyTargetCalls {
+float: right;
+    margin-top: -29px;
+}
+div.dashboardDailyDate{
+    display: inline-block;
+    width: 40px;
+    margin-left: 0px;
+    text-align: center;
+    position: absolute;
+}
+div.dashboardSelectDate{
+	display:inline;
+}
+div.dailyBlue{
+	margin-top: 26px;
+}
+.ui-mini{
+	margin-left: 0.3em;
+}
+
+span.dailyBalance, span.dailyCardPayments, span.weeklyCardPayments, span.weeklyBalance{
+	margin-right: 4px;
+}
+img.journeyIndicator{
+    height: 18px;
+    width: 18px;
+    margin-right: -5px;
+    margin-top: 0px;
+}
+.ui-popup-container, .ui-popup {
+    /* height: 170px; */
+    width: 109%;
+    position: absolute;
+    top: 21px !important;
+    left: 0px !important;
+	-webkit-border-radius: 0em; /*{global-radii-blocks}; */
+    border-radius: 0em; /*{global-radii-blocks}; */
+}
+.ui-overlay-shadow {
+    -webkit-box-shadow: 0 0 0px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 0 0px rgba(0,0,0,.6);
+    box-shadow: 0 0 0px rgba(0,0,0,.6);
+}
+.popUpheader{
+	padding-left: 15px;
+}
+#closePopUp{
+    top: 1px;
+    right: 0px;
+    border: 0px;
+}
+.ui-alt-icon .ui-icon-delete:after{
+    background-image:url("themes/images/icons-png/delete-blue.png");
+}
+#journeySubmit{
+    top: 132px;
+    right: 0px;
+}
+.journeyDetailsDiv{
+	padding-left: 20px;
+}
+#journeyIndicator{
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+	width: 4%;
+	color: #fff;
+}
+#journeyDesc{
+    padding-right: 7px;
+    padding-left: 7px;
+	padding-top: 11px;
+    padding-bottom: 11px;
+	width: 15%;
+	font-weight: bold;
+}
+
+#primaryAgentName{
+    padding-right: 7px;
+    padding-left: 7px;
+	padding-top: 11px;
+    padding-bottom: 11px;
+	width: 85%;
+}
+li#journeyList{
+	padding-left: 0px;
+}
+a#journeyOrderNoSelection{
+	padding-bottom: 0px;
+}

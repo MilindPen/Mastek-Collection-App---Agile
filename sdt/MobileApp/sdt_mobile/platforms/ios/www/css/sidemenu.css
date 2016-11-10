@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Jan, 2016, 12:40:02 AM
+    Author     : Dharav12871
+*/
+
+div.overlay{
+    width:65%;
+    text-shadow: 3px /*{a-body-shadow-x}*/ 3px /*{a-body-shadow-y}*/ 3px /*{a-body-shadow-radius}*/ none /*{a-body-shadow-color}*/ !important;
+    color:black;
+}
+li.menu, li.ui-btn-d ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all{
+    color:black !important;
+    font: normal 12px arial !important;
+    padding-top:15px !important;
+    padding-bottom:15px !important;
+    border-radius: 0px;
+}
+div.agent{
+    font-family: arial; font-size:16px;  text-transform: capitalize;
+    color:black;
+    text-align: center;
+}
+div.area{
+    font-family: arial; font-size:12px;  text-transform: capitalize;
+    color:black;
+    margin-bottom: 18px;
+    text-align: center;
+}
+div.logo{
+    width:100%; text-align: center;
+}
+div.logo > img{
+     width:122px;
+     height:87px; 
+}

@@ -1,0 +1,78 @@
+/* 
+    Created on : Apr 8, 2016, 4:23:16 PM
+    Author     : Abhiji102491
+*/
+
+.ui-page-theme-a{
+    background-color: #ffffff;
+}
+
+.login-section{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 50px;
+}
+
+.logo-img img{
+    display: block;
+    margin:auto;
+    margin-top: 65px;
+    width: 27%;
+    max-width: 150px;
+}
+
+.login-section label{
+    margin-bottom: 2px;
+    font-size: 1.214em;
+}
+
+.login-section .ui-input-text{
+    border-color: #464646;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    background-color: #f4f4f4
+}
+
+.ui-btn{
+    font-size: 1.429em;
+    font-weight: normal;
+    padding: 10px;
+}
+
+button.login-btn{
+    background-color: #1f9bde !important;
+    border-color: #1f9bde !important;
+    color: #ffffff !important;
+    border: 2px solid;
+}
+
+/*PIN css*/
+div.pin{
+    width: 152px;
+    display: block;
+    margin:auto;
+    margin-bottom: 25px;
+}
+div.pin .ui-input-text{
+    width:30px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+div.pin input{
+    text-align: center;
+    font-size: 0.857em;
+    -webkit-text-security: disc;
+    color: #000;
+}
+
+.login-section a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.214em;
+    -webkit-touch-callout: none;
+}
+
+.login-section a:active, .login-section a:hover{
+    color: #1f9bde;
+}

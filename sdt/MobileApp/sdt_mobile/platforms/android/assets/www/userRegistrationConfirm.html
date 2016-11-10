@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Registration Confirmation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        
+        <!--CSS files-->
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>
+        <link href="css/userRegistration.css" rel="stylesheet" type="text/css"/>
+        
+        <!--JS files-->
+        <script type="text/javascript" src="cordova.js"></script>
+		<script src="js/lib/jquery.js" type="text/javascript"></script>
+		<script src="js/lib/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<script src="js/lib/date.js" type="text/javascript"></script>
+		<script src="js/lib/dateFormatter.js" type="text/javascript"></script>
+		<script src="js/common/common.js" type="text/javascript"></script>
+		<script src="js/common/constants.js" type="text/javascript"></script>
+		<script src="js/common/dataStorage.js" type="text/javascript"></script>
+		<script src="js/common/callService.js" type="text/javascript"></script>
+		<script src="js/lib/aes.js" type="text/javascript"></script>
+		<script src="js/lib/jquery.autotab.js" type="text/javascript"></script>
+        <script src="js/userRegistrationConfirm.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <div class="logo-img">
+            <img src="img/logo.png">
+        </div>
+        <div class="userreg">
+            <img src="img/verified-reg-icon.png">
+            <label id="reg-verified">Your account has been verified</label>
+            <label id="user-fullName"></label>
+            <label for="gen-pin">Create your PIN</label>
+            <div class="pin">
+                <input type="number" class="pin-box" pattern="[0-9]*" id="gen-pin-1" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="pin-box" pattern="[0-9]*" id="gen-pin-2" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="pin-box" pattern="[0-9]*" id="gen-pin-3" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="pin-box" pattern="[0-9]*" id="gen-pin-4" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+            </div>
+            <label for="confirm-pin">Confirm your PIN</label>
+            <div class="confirm-pin-div">
+                <input type="number" class="confirm-pin-box" pattern="[0-9]*" id="confirm-pin-1" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="confirm-pin-box" pattern="[0-9]*" id="confirm-pin-2" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="confirm-pin-box" pattern="[0-9]*" id="confirm-pin-3" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+                <input type="number" class="confirm-pin-box" pattern="[0-9]*" id="confirm-pin-4" value="" autocomplete="off" maxlength="1" inputmode="numeric" data-corners="false"/>
+            </div>
+            <button class="userreg-confirm ui-btn ui-corner-all" onclick="validatePin()">Confirm</button>
+            
+        </div>
+    </body>
+</html>

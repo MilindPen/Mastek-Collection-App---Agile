@@ -1,0 +1,11 @@
+{
+    "cordova-sqlcipher-adapter": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/litehelpers/Cordova-sqlcipher-adapter",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

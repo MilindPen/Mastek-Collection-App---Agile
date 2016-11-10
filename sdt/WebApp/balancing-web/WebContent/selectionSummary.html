@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="icon" href="img/favicon.png">
+    <title id="selectionScreenTitle"></title>
+
+
+    <!-- load from CDN -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  
+    <!-- CSS Libraries-->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/selectionSummary.css" rel="stylesheet">
+	
+		<!-- JS Libraries -->
+    <script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/moment.min.js"></script>
+	
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <img src="img/logo.png" alt="logo" class="img-rounded">
+				<div class="menuItemsDiv">
+					<a href="/balancing/login/" class="menuHome font17px">Home</a>
+				</div>
+				<div class="menuRight" align="right">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<span class="menuAgentName" id="menuAgentName"></span>
+				</div>
+            </div>
+            <!-- /.navbar-header -->
+
+        </nav>
+		
+			
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header selectionScreenHeader"></h1>
+                    </div>
+					<!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+				<div class="row weekSelectionRow">
+					<div class="col-lg-6">
+							<span class="branchNameLabel">Branch Name:&nbsp;</span><span class="branchNameValue" id="branchNameValue_1"></span><br>
+							<span class="displayWeekLabel">Week:&nbsp;</span><span class="displayWeekStartValue" id="displayWeekStartValue"></span> - <span class="displayWeekEndValue" id="displayWeekEndValue"></span>
+                    </div >
+				</div>
+				<!-- /.row -->
+				<br />
+				
+				<div class="row userJourneyDataRow">
+					
+						<div class="col-lg-6 userDataColumn6">
+						<div class="well well-lg userDataColumnWell">
+						<label for="AgentFilter">Agent / Business Manager Name</label>
+						<div class="form-inline input-group input-group-sm">
+							<input id="AgentFilter" type="text" class="form-control" placeholder="Search" aria-describedby="searchBox">
+							<span class="input-group-addon" id="searchBox">
+								<img id="userSearchIcon" src="img/search-icon.png"/>
+							</span>
+						</div>		
+						<br/>
+						<table class="table table-hover userTable">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Primary Journey</th>
+									<th>Type</th>
+									
+								</tr>
+							</thead>
+							<tbody class="userSearchable" id="userSearchable">
+								
+							</tbody>
+						</table>
+						<button type="submit" class="btn custom-btn-primary" id="submitSelectionScreenData">Submit</button>
+						</div>
+                    </div>
+						
+					<div class="col-lg-6 journeyDataColumn6">
+						<div class="well well-lg journeyDataColumnWell">
+						<label for="JourneyFilter">Journey</label>
+						<div class="form-inline input-group input-group-sm">
+							<input id="JourneyFilter" type="text" class="form-control" placeholder="Search" aria-describedby="searchBox">
+							<span class="input-group-addon" id="searchBox">
+								<img id="journeySearchIcon" src="img/search-icon.png"/>
+							</span>
+                    </div>
+						<br/>
+						<table class="table table-hover journeyTable">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Journey</th>
+									<th>Primary Agent</th>
+								</tr>
+							</thead>
+							<tbody class="journeySearchable" id="journeySearchable">
+								
+							</tbody>
+						</table>
+						</div>
+                    </div>
+					<!-- /.col-lg-6 -->
+					
+                </div>
+                <!-- /.row -->
+				
+				<!-- journey selection start -->
+					<div class="row journeyDataRow">
+					<div class="col-lg-12 branchWeekInfo">
+						<span class="branchNameLabel">Branch Name:&nbsp;</span><span class="branchNameValue" id="branchNameValue_2"></span><br>
+						<span class="displayWeekLabel">Week:&nbsp;</span><span class="displayWeekStartValue" id="displayWeekStartValue"></span> - <span class="displayWeekEndValue" id="displayWeekEndValue"></span>
+                    </div>
+					<div class="col-lg-12 journeyDataColumn6">
+						<div class="well well-lg journeyDataColumnWell journeySelectionWell">
+						<label for="journeySelectionFilter">Journey</label>
+						<div class="form-inline input-group input-group-sm">
+							<input id="journeySelectionFilter" type="text" class="form-control" placeholder="Search" aria-describedby="searchBox">
+							<span class="input-group-addon" id="searchBox">
+								<img id="journeySearchIcon" src="img/search-icon.png"/>
+							</span>
+						</div>
+						<br/>
+						<table class="table table-hover journeyTable journeySelectionTable">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Journey</th>
+									<th>Primary Agent</th>
+								</tr>
+							</thead>
+							<tbody class="journeySearchable journeySelectionTbody" id="journeySearchable_2">
+								
+							</tbody>
+						</table>
+						<button type="submit" class="btn custom-btn-primary" id="journeySelectionSubmit">Submit</button>
+						</div>
+                    </div>
+					<!-- /.col-lg-6 -->
+					
+                </div>
+				<!-- journey selection end -->
+				
+				
+				
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+				<footer class="footer">
+			<div class="container">
+				<p class="text-muted"></p>
+			</div>
+		</footer>
+    </div>
+    <!-- /#wrapper -->
+
+	<img src="img/382.gif" id="loading-indicator" style="display:none" />
+	<div id="disablingDiv" ></div>
+	
+	<!-- JS Libraries -->
+    <script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/moment.min.js"></script>
+	<script src="js/lib/bootbox.min.js"></script>
+		
+    <!-- Custom JS -->
+	<script src="js/common/constants.js"></script>
+	<script src="js/common/services.js"></script>	
+	<script src="js/common/common.js"></script>
+	<script src="js/common/callService.js"></script>
+    <script src="js/selectionSummary.js"></script>
+	
+	
+</body>
+</html>

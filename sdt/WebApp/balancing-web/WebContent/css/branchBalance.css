@@ -1,0 +1,81 @@
+.bg-white {
+    padding-bottom: 0px;
+}
+
+#journeyList>div.bg-white{
+	padding-top: 0px;
+}
+
+.journeyListTable {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+th, td{
+	text-align:right;
+}
+
+.amber-color{
+	color: #ffb44f;
+}
+
+#btnCloseBranch{
+	float:right;
+	width: 110px;
+}
+
+.journeyNumberTH{
+	background-color: #d4df65;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.2 !important;
+}
+
+.agentContactNoTH{
+	font-size: smaller;
+    font-family: monospace;
+}
+
+.journeyListTable th{
+	vertical-align: middle !important;
+}
+
+.branchSummaryRow,.journeyListRow{
+	background-color: white;
+}
+.branchWeekInfo, .journeyListInfo{
+	padding-top:8px;
+}
+
+.branchWeekInfo{
+	padding-bottom: 8px;
+}
+
+.branchSummaryInfo{
+	margin-top: -16px;
+}
+.table-hover>tbody>tr:hover{
+	background-color: white;
+}
+.blankTh{
+	width: 178px;
+}
+.journeyListRow{
+	margin-top: -20px;
+}
+
+.textLeft {
+    text-align: left;
+    font-weight: bold;
+}
+
+.branchWeekTable th:nth-of-type(1),.branchWeekTable  td:nth-of-type(1),.journeyListTable th:nth-of-type(1),.journeyListTable td:nth-of-type(1) {width:15%;}
+.branchWeekTable th:nth-of-type(2),.branchWeekTable  td:nth-of-type(2),.journeyListTable th:nth-of-type(2),.journeyListTable td:nth-of-type(2) {width:9%;}
+.branchWeekTable th:nth-of-type(3),.branchWeekTable  td:nth-of-type(3),.journeyListTable th:nth-of-type(3),.journeyListTable td:nth-of-type(3) {width:9%;}
+.branchWeekTable th:nth-of-type(4),.branchWeekTable  td:nth-of-type(4),.journeyListTable th:nth-of-type(4),.journeyListTable td:nth-of-type(4) {width:9%;}
+.branchWeekTable th:nth-of-type(5),.branchWeekTable  td:nth-of-type(5),.journeyListTable th:nth-of-type(5),.journeyListTable td:nth-of-type(5) {width:9%;}
+.branchWeekTable th:nth-of-type(6),.branchWeekTable  td:nth-of-type(6),.journeyListTable th:nth-of-type(6),.journeyListTable td:nth-of-type(6) {width:9%;}
+.branchWeekTable th:nth-of-type(7),.branchWeekTable  td:nth-of-type(7),.journeyListTable th:nth-of-type(7),.journeyListTable td:nth-of-type(7) {width:10%;}
+.branchWeekTable th:nth-of-type(8),.branchWeekTable  td:nth-of-type(8),.journeyListTable th:nth-of-type(8),.journeyListTable td:nth-of-type(8) {width:10%;}
+.branchWeekTable th:nth-of-type(9),.branchWeekTable  td:nth-of-type(9),.journeyListTable th:nth-of-type(9),.journeyListTable td:nth-of-type(9) {width:10%;}
+.branchWeekTable th:nth-of-type(10),.branchWeekTable  td:nth-of-type(10),.journeyListTable th:nth-of-type(10),.journeyListTable td:nth-of-type(10) {width:10%;}

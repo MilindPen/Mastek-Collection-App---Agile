@@ -1,0 +1,92 @@
+/* 
+    Created on : Apr 26, 2016, 11:57:46 AM
+    Author     : Abhijit Nair
+*/
+
+.ui-page-theme-a{
+    background-color: #ffffff;
+}
+
+.userreg{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 40px;
+}
+
+.userreg label{
+    margin-bottom: 2px;
+    font-size: 1.214em;
+}
+
+.userreg #reg-verify{
+    margin-bottom: 18px;
+    font-size: 1.429em;
+}
+
+.userreg #reg-verified{
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+
+.userreg input{
+    font-size: 1.214em;
+    color: #000;
+}
+
+.userreg .ui-input-text{
+    border-color: #464646;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    background-color: #f4f4f4
+}
+
+.ui-btn{
+    font-size: 1.429em;
+    font-weight: normal;
+    padding: 10px;
+}
+
+button.userreg-next, button.userreg-confirm{
+    background-color: #1f9bde !important;
+    border-color: #1f9bde !important;
+    color: #ffffff !important;
+    border: 2px solid;
+}
+
+button.userreg-cancel{
+    border: 2px solid;
+}
+
+.logo-img img{
+    display: block;
+    margin:auto;
+    margin-top: 30px;
+    width: 27%;
+    max-width: 150px;
+}
+
+.userreg img{
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#user-fullName{
+    font-size: 1.429em;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+
+/*PIN css*/
+div.pin .ui-input-text, div.confirm-pin-div .ui-input-text{
+    width:30px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+div.pin input, div.confirm-pin-div input{
+    text-align: center;
+    font-size: 0.857em;
+    -webkit-text-security: disc;
+    color: #000;
+}

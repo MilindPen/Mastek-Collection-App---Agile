@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="icon" href="img/favicon.png">
+    <title>Weekly Summary Sheet</title>
+	
+	<!-- load from CDN -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  
+	
+	
+    <!-- CSS Libraries-->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="css/common.css" rel="stylesheet">
+    <link href="css/weeklySummarySheet.css" rel="stylesheet">
+		
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <img src="img/logo.png" alt="logo" class="img-rounded">
+				<div class="menuItemsDiv">
+					<a href="/balancing/login/" class="menuHome font17px">Home</a>
+				</div>
+				<div class="menuRight" align="right">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<span class="menuAgentName" id="menuAgentName"></span>
+				</div>
+            </div>
+            <!-- /.navbar-header -->
+
+        </nav>
+		
+			
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">WEEKLY CASH SUMMARY</h1>
+                    </div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 agentWeekInfo">
+						<span class="agentNameLabel">Name:&nbsp;</span><span class="agentNameValue" id="agentNameValue"></span><span class="primaryJourney"></span><br>
+						<span class="journeyLabel">Journey:&nbsp;</span><span class="journeyNumber" id="journeyNumber"></span> - <span class="branchName" id="branchName"></span><br><br>
+						<span class="displayWeekLabel font12px">Week:&nbsp;</span><span class="displayWeekStartValue font12px" id="displayWeekStartValue"></span> - <span class="displayWeekEndValue font12px" id="displayWeekEndValue"></span>
+						<span class="closeWeekStatus font12px" id="closeWeekStatus"></span>
+                    </div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 summarySheetDiv">
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span class="summarySheetLabel">Collections</span>
+							</div>	
+							
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="summarySheetAmt"><a href="#" class="summarySheetAmtLink" id="collectionsAmt" onclick="weeklySummarySheet.setAndRedirect('C')"></a></span>
+							</div>
+						</div>
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span class="summarySheetLabel">Float Withdrawn</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="summarySheetAmt"><a href="#" class="summarySheetAmtLink" id="floatWithdrawnAmt" onclick="weeklySummarySheet.setAndRedirect('F')"></a></span>
+							</div>
+						</div>
+						<div class="row row_style" id="totalRecvDiv">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span id="totalRecvSpan" class="summarySheetLabel fontBold">Total Received</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span id="totalRecvAmt" class="summarySheetAmt fontBlack fontBold"></span>
+							</div>
+						</div>
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span class="summarySheetLabel">Loans Issued</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="summarySheetAmt"><a href="#" class="summarySheetAmtLink" id="loansIssuedAmt" onclick="weeklySummarySheet.setAndRedirect('L')"></a></span>
+							</div>
+						</div>
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span class="summarySheetLabel">Cash Banked</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="summarySheetAmt"><a href="#" class="summarySheetAmtLink" id="cashBankedAmt" onclick="weeklySummarySheet.setAndRedirect('B')"></a></span>
+							</div>
+						</div>
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span class="summarySheetLabel">RAF</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="summarySheetAmt"><a href="#" class="summarySheetAmtLink" id="rafAmt" onclick="weeklySummarySheet.setAndRedirect('O')"></a></span>
+							</div>
+						</div>
+						<div class="row row_style" id="totalPaidDiv">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span id="totalPaidSpan" class="summarySheetLabel fontBold">Total Paid Out</span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span id="totalPaidOutAmt" class="summarySheetAmt fontBlack fontBold"></span>
+							</div>
+						</div>
+						<div class="row row_style">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<span id="weeklyBalanceLabel" class="summarySheetLabel"></span>
+							</div>			
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span id="balanceAmt" class="summarySheetAmt fontBlack"></span>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<div class="row">
+					<div class="col-lg-12 reasonDiv">
+						<div class="row row1">
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+								<span class="reasonDivLabel">Reason:</span>
+							</div>			
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+								<span class="reasonDivInput"><textarea class="form-control" rows="2" cols="35" id="weeklyShortsOverReason"></textarea></span>
+							</div>
+						</div>	
+						<div class="row row2">
+							<div class="col-lg-12">
+								<button type="button" class="btn custom-btn-default reasonSubmitButton blueButton">Submit</button>
+							</div>
+						</div>
+					</div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+				
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+		<footer class="footer navbar-fixed-bottom">
+			<div class="container">
+				<p class="text-muted"></p>
+			</div>
+		</footer>
+    </div>
+    <!-- /#wrapper -->
+	<img src="img/382.gif" id="loading-indicator" style="display:none" />
+	<div id="disablingDiv" ></div>
+    <!-- JS Libraries -->
+    <script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/moment.min.js"></script>
+	<script src="js/lib/bootbox.min.js"></script>
+		
+    <!-- Custom JS -->
+	<script src="js/common/constants.js"></script>
+	<script src="js/common/services.js"></script>	
+	<script src="js/common/common.js"></script>
+	<script src="js/common/callService.js"></script>
+    <script src="js/weeklySummarySheet.js"></script>
+
+</body>
+</html>
+

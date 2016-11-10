@@ -1,0 +1,288 @@
+html .ui-body-c .ui-btn:hover, html .ui-body-c .ui-btn:hover{
+    background-color: #f4f4f4;
+    border: 1px solid #000;
+    border-left: 0;
+}
+
+img.dashboardIcon{
+	height: 15px;
+    width: 23px;
+    /* padding: 0px; */
+    margin-top: 9px !important;
+    margin-right: 8px !important;
+}
+a.dashboardIcon{
+    padding:0px;
+}
+
+.ui-navbar {
+    max-width: 100%;
+    margin-left: -2px !important;
+    margin-right: -2px !important;
+}
+.ui-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    border: 0;
+    max-width: 100%;
+    overflow: visible;
+}
+.ui-content{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    overflow-y: auto;
+    max-height: calc(100vh - 123px);
+    border: 9px solid #e2e2e2;
+    min-height: calc(100vh - 123px);
+    position: relative;
+	border-bottom-width: 0px;
+}
+
+.input-group{
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.ui-btn{
+    font-weight: normal !important;
+}
+.ui-select {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.input-group>.ui-select>.ui-btn{
+    border: 1px solid #464646;
+    height: 15px;
+    background-color: #f4f4f4;
+	color: #000;
+	text-align: left;
+	padding-top: 5px;
+}
+
+input[type="text"] {
+    border: 1px solid #464646;
+    height: 9px;
+    background-color: #f4f4f4;
+	color: #000;
+}
+
+span.payment-cmbbox{
+    color: transparent;
+}
+
+div.btngroup{
+    background-color: #c5c5c5 !important;
+    padding-top: 8px;
+    padding-right: 14px;
+    margin-top: -10px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0px;
+    padding-bottom: 4px;
+}
+.ui-icon-carat-d:after{
+    background-image: url("themes/images/icons-png/carat-d-black.png")
+}
+/*Footer*/
+.ui-page-theme-a .ui-bar-inherit{
+    background-color: #fff;
+}
+
+.pageFooter .footer-btngroup {
+    background-color: #c5c5c5;
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-right: 13px;
+    margin-bottom: 9px;
+}
+
+.pageFooter{
+	position: fixed;
+	border: 9px solid #e2e2e2;
+	height: 35px;
+	border-top-width: 0px;
+	width: inherit;
+	padding-left: 15px;
+}
+
+.ui-footer button.ui-btn {
+    width: 100%;
+}
+
+#footer-dashBtn1 .ui-btn, #footer-dashBtn2 .ui-btn{
+    font-size: 16px;
+}
+
+#footer-dashBtn2 .ui-btn {
+    margin-top: 0px;
+}
+
+
+.ui-selectmenu.ui-popup .ui-input-search {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.ui-selectmenu.ui-dialog .ui-content {
+    padding-top: 0;
+}
+.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+    margin-top: 0;
+}
+.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+    border-top-width: 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.ui-selectmenu.ui-dialog .ui-header {
+    border-bottom-width: 1px;
+}
+/*Filter */
+#filter-menu-listbox-popup{
+
+	top: 286px !important;
+    left: 23px !important;
+    width: calc(100vw - 46px) !important;
+    height: 242px !important;
+}
+
+#filter-menu-listbox{
+	border-radius: 0px !important;	
+	border-color: #464646;
+    border-top-color: transparent;
+}
+
+#filter-menu-menu{
+	max-height: 193px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ui-input-search {
+	border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: #464646 !important;
+	height: 26px;
+	padding-top: 0px;
+    padding-bottom: 3px;
+}
+.ui-overlay-shadow {
+    -webkit-box-shadow: 0 0 0px rgba(0,0,0,.6);
+    -moz-box-shadow: 0 0 0px rgba(0,0,0,.6);
+    box-shadow: 0 0 0px rgba(0,0,0,.6);
+}
+
+.ui-input-has-clear {
+    padding-right: 0em;
+	
+}
+
+.ui-icon-delete:after {
+    background-image: url("themes/images/icons-png/delete-blue.png");
+}
+
+#ui-datepicker-div{
+	z-index: 1000 !important;
+}
+
+div#filter-menu-listbox>.ui-header{
+	display: none;
+}
+
+
+div.checkbox-input{
+    display: inline-block;
+    float: left;
+    /*padding-top:6px;*/
+}
+
+div.checkbox-label{
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    border: 1px solid #464646;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+input[type="checkbox"]:checked + label.alignTick:after {
+     top: 5px;
+}
+
+input[type="checkbox"]:checked + label#chkboxlabel:after {
+    content: '✔';
+    display: inline-block;
+    font-size: 13px;
+    position: absolute;
+    left: 1px;
+    /*top: 0px;*/
+}
+
+#journeyIndicator{
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+	width: 4%;
+	color: #fff;
+}
+
+#journeyDesc{
+    padding-right: 7px;
+    padding-left: 7px;
+	/*padding-top: 11px;*/
+    padding-bottom: 11px;
+	width: 12%;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#primaryAgentName{
+    padding-right: 7px;
+    padding-left: 7px;
+	padding-top: 11px;
+    padding-bottom: 11px;
+	width: 85%;
+	color: #939393;
+}
+
+a.ui-btn{
+	padding-left: 0px !important;
+	color: #000;
+}
+
+#journeyList a{
+	color: #000;
+	width: 100%;
+}
+
+.primaryJourney{
+	background-color: #ccd627;
+}
+
+.delegatedJourney{
+	background-color: #c5c5c5;
+}
+
+#journeyList li{
+display: inline-flex !important;
+width: 100%;
+height: 35px;
+}

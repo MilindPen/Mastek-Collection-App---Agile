@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd" >
+  
+  	<context:annotation-config />
+	<context:spring-configured />
+	<!--  <bean class="org.jboss.resteasy.plugins.spring.SpringBeanProcessorServletAware"  ></bean> -->
+    <context:component-scan base-package="com.mastek.*">
+    	<!--  <context:include-filter type="annotation" expression="javax.ws.rs.ext.Provider"/> -->
+    </context:component-scan>
+    
+    <bean id="propResolver" class="com.mastek.commons.util.PropertyResolver">
+      <constructor-arg>
+        <list> 
+        	<value>messages.properties</value>
+        	<value>application.properties</value>
+        </list>
+      </constructor-arg>
+    </bean>
+        
+    <import resource="persistence-config.xml"/>
+    
+    <bean id="apiListingResourceJSON" class="io.swagger.jaxrs.listing.ApiListingResource"/>
+    <bean id="apiDeclarationProvider" class="io.swagger.jaxrs.listing.SwaggerSerializers"/>
+	
+	 <!--   <bean id="beanConfig" class="io.swagger.jaxrs.config.BeanConfig">
+        <property name="title" value="sdt app"/>
+        <property name="version" value="1.0" />
+        <property name="schemes" value="http" />
+        <property name="host" value="localhost:9092" />
+        <property name="basePath" value="/sdt-rs"/>
+        <property name="resourcePackage" value="com.mastek.sdt.domain"/>
+        <property name="scan" value="true"/>
+    </bean> -->
+</beans>

@@ -1,0 +1,68 @@
+div.agentWeekInfo{
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*
+div.summarySheetDiv > div.row1, div.reasonDiv > div.row1, div.row2, div.row3, div.row4, div.row5, div.row6, div.row7, div.row8{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+}
+*/
+
+.row_style{
+	height: 36px;
+    padding-top: 8px;
+}
+div.row2{
+	margin-top: -10px;
+	text-align: left;
+}
+div.summarySheetDiv, div.reasonDiv{
+	margin-top:	5px;
+	background-color: white;
+}
+div.reasonDiv{
+	margin-bottom: 20px;
+}
+span.summarySheetLabel, span.reasonDivLabel{
+	float:left;
+
+}
+button.reasonSubmitButton{
+	margin-top: 20px;
+	float:center;
+	width: auto;
+}
+span.reasonDivLabel{
+	margin-top: 16px;
+}
+span.reasonDivInput{
+	float:left;
+}
+span.summarySheetAmt{
+	float: right;
+	color: #1f9bde;
+}
+div.row3, div.row7{
+	margin-left: -10px;
+	padding-left: 25px;
+	background-color: #f6f6f6;
+}
+textarea.form-control{
+	background-color: #f6f6f6;
+	border: 1px solid black;
+	border-radius: 0px;
+}
+div.menuRight{
+	float: right;
+}
+div#totalRecvDiv, div#totalPaidDiv{
+	background: #fbfbe5;
+    margin-left: -14px;
+    margin-right: -10px;
+}
+span#totalRecvSpan, span#totalPaidSpan{
+	margin-left: -10px;
+}

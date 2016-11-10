@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" href="img/favicon.png">
+    <title>Branch Balance</title>
+
+    <!-- load from CDN -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  
+    <!-- CSS Libraries-->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/selectionSummary.css" rel="stylesheet">
+	<link href="css/branchBalance.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <img src="img/logo.png" alt="logo" class="img-rounded">
+				<div class="menuItemsDiv">
+					<a href="/balancing/login/" class="menuHome font17px">Home</a>
+				</div>
+				<div class="menuRight" align="right">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<span class="menuAgentName" id="menuAgentName"></span>
+				</div>
+				
+            </div>
+			
+            <!-- /.navbar-header -->
+        </nav>
+		
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row branchBalanceTitleRow">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Branch Balance</h1>
+                    </div>
+					<!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+				<div class="row bg-white">
+					<div class="col-lg-12 branchWeekInfo">
+						<div class="col-lg-6">
+							<span class="branchNameLabel">Branch Name:&nbsp;</span><span class="branchNameValue"></span><br>
+							<span class="displayWeekLabel">Week:&nbsp;</span><span class="displayWeekStartValue"></span> - <span class="displayWeekEndValue"></span>
+                    		<span class="closeBranchStatus amber-color"><span class="status"></span><span class="closedByAgent"></span><span class="closedTime"></span></span>
+                    	</div >
+                    	<div class="col-lg-6">
+                    		<button type="button" class="btn btn-default custom-btn-primary" id="btnCloseBranch">Close Branch</button>
+                    	</div>
+                    	
+                    </div>
+					<div class="col-lg-12 branchSummaryInfo">
+						<br>
+						<table class="table table-hover branchWeekTable">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Cash</th>
+									<th>Card</th>
+									<th>Central</th>
+									<th>Loans</th>
+									<th>RAF</th>
+									<th>Float</th>
+									<th>Banked</th>
+									<th class="blankTh"></th>
+									<th>Branch S/O</th>
+								</tr>
+							</thead>
+							<tbody class="">
+								<tr>
+									<td></td>
+									<td id='cashTotal'></td>
+									<td id='cardTotal'></td>
+									<td id='centralTotal'></td>
+									<td id='loanTotal'></td>
+									<td id='rafTotal'></td>
+									<td id='floatTotal'></td>
+									<td id='bankedTotal'></td>
+									<td></td>
+									<td id='branchSOTotal'></td>
+								</tr>
+								<tr>
+									<td class="textLeft">S/O</td>
+									<td id='cashSOTotal'></td>
+									<td></td>
+									<td></td>
+									<td id='loanSOTotal'></td>
+									<td></td>
+									<td id='floatSOTotal'></td>
+									<td id='bankedSOTotal'></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="journeyList">
+				
+			</div>
+			<!-- /#journeyList -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+		<br/>
+		<br/>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted"></p>
+			</div>
+		</footer>
+    </div>
+    <!-- /#wrapper -->
+	<img src="img/382.gif" id="loading-indicator" style="display:none" />
+	<div id="disablingDiv" ></div>
+	<!-- JS Libraries -->
+    <script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/bootbox.min.js"></script>
+	<script src="js/lib/moment.min.js"></script>
+		
+    <!-- Custom JS -->
+	<script src="js/common/constants.js"></script>
+	<script src="js/common/services.js"></script>
+	<script src="js/common/common.js"></script>
+	<script src="js/common/callService.js"></script>
+    <script src="js/branchBalance.js"></script>
+
+</body>
+</html>

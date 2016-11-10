@@ -1,0 +1,151 @@
+
+.amt-css{
+	text-align: right !important;
+}
+
+div.agentWeekInfo{
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.elipssis{
+white-space: nowrap; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+width: 100%;
+}
+
+ 
+ #balTransTblData {
+            width: 100%;
+        }
+
+ #balTransTblData thead, tbody,tfoot, tr, td, th { display: block; }
+
+ #balTransTblData tr:after {
+		content: ' ';
+		display: block;
+		visibility: hidden;
+		clear: both;
+	}
+
+
+
+#balTransTblData tbody {
+		height: 260px;
+		overflow-y: scroll;
+	}
+
+#balTransTblData thead {
+		/* fallback */
+	}
+
+
+#balTransTblData tbody td, thead th,tfoot td {
+		
+		float: left;
+	}   
+	
+/*#balTransTblData th:nth-of-type(1),#balTransTblData tfoot td:nth-of-type(1), #balTransTblData td:nth-of-type(1) {width:23%;}
+#balTransTblData th:nth-of-type(2),#balTransTblData tfoot td:nth-of-type(2) ,#balTransTblData td:nth-of-type(2) {width:12%;}
+#balTransTblData th:nth-of-type(3),#balTransTblData tfoot td:nth-of-type(3),#balTransTblData td:nth-of-type(3) {width:25%;}
+#balTransTblData th:nth-of-type(4),#balTransTblData tfoot td:nth-of-type(4),#balTransTblData td:nth-of-type(4) {width:20%;}
+#balTransTblData th:nth-of-type(5),#balTransTblData tfoot td:nth-of-type(5),#balTransTblData td:nth-of-type(5) {width:10%;}
+#balTransTblData th:nth-of-type(6),#balTransTblData tfoot td:nth-of-type(6),#balTransTblData td:nth-of-type(6) {width:10%;}	*/
+
+/*table#balTransTblData th:nth-of-type(1),table#balTransTblData tfoot td:nth-of-type(1), table#balTransTblData td:nth-of-type(1) {width:23%;}
+table#balTransTblData th:nth-of-type(2),table#balTransTblData tfoot td:nth-of-type(2),table#balTransTblData td:nth-of-type(2) {width:32%;}
+table#balTransTblData th:nth-of-type(4),table#balTransTblData tfoot td:nth-of-type(4),table#balTransTblData td:nth-of-type(3) {width:25%;}
+table#balTransTblData th:nth-of-type(5),table#balTransTblData tfoot td:nth-of-type(5),table#balTransTblData td:nth-of-type(4) {width:10%;}
+table#balTransTblData th:nth-of-type(6),table#balTransTblData tfoot td:nth-of-type(6),table#balTransTblData td:nth-of-type(5) {width:10%;}*/
+
+.table>tfoot>tr>td, .table>tfoot>tr>th {
+    
+    border-top: 0px;
+}
+
+.error{
+	color: red;
+}
+
+.errorHeading{
+	padding-left: 8px;
+}
+#errors {
+    color: red;
+    padding-left: 15px;
+}
+#errors li {
+    list-style-type: none;
+}
+#errors li:before {
+    content: '\b7\a0';
+}
+
+input[type=text] {
+    -webkit-border-radius:0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    border-radius:0;
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+input[type=number]{
+	-webkit-border-radius:0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    border-radius:0;
+	box-sizing: border-box;
+	width: 60% !important;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.has-error>input{
+
+	border-color: red;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+select {
+	 height: 26px;
+}
+
+.row_width{
+	width: 100%;
+}
+
+.chq_padding {
+    padding-left: 20px !important;
+}
+.ref_padding {
+    padding-left: 15px !important;
+}
+.amt_padding {
+    padding-right: 20px !important;
+}
+.edit_padding {
+    padding-left: 25px !important;
+}
+
+.delete_padding{
+	padding-left: 27px !important;
+}
+
+#errorDiv{
+	display:none;
+}
+
+/*
+.modal-dialog {
+    width: 270px;
+    margin: 170px auto;
+}*/

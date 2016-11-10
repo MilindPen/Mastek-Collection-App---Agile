@@ -1,0 +1,108 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <!--CSS files-->
+        
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>     
+        <link href="css/sidemenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>	
+
+        <!--Custom page css-->
+        <link href="css/customerDetails.css" rel="stylesheet" type="text/css"/>
+		<link href="css/loanDetails.css" rel="stylesheet" type="text/css"/>
+        
+        
+        <!--JS files-->	
+        <script src="cordova.js"></script>
+        <script src="js/lib/jquery.js"></script>
+		<script src="js/lib/iscroll.js"></script>
+        <script src="js/lib/jquery.mobile-1.4.5.js"></script> 
+        <script src="js/lib/date.js"></script>  
+        <script src="js/lib/dateFormatter.js"></script>
+        <script src="js/lib/fastclick.js" type="text/javascript"></script>
+		<script src="js/lib/moment.min.js" type="text/javascript"></script>
+        <script src="js/common/common.js" type="text/javascript"></script>
+        <script src="js/common/constants.js" type="text/javascript"></script>
+        <script src="js/common/dataStorage.js" type="text/javascript"></script>
+		<script src="js/balanceTransaction.js" type="text/javascript"></script>
+        
+        
+    </head>    
+    <body>
+        <!--Page start-->
+        <div data-role="page" id="pageone">
+
+            <!--Side Menu-->
+           
+            <!--Page header-->
+            <div data-role="header" class="customheader" data-position="fixed" data-tap-toggle="false">
+                <h1></h1>
+                <a href="#" id="backLink" data-transition="slide" data-rel="back" data-icon="carat-l" data-role="button" data-position-to="#menu" data-inline="true" data-theme="g" class="ui-link ui-btn ui-btn-g ui-alt-icon ui-icon-carat-l ui-btn-icon-notext ui-btn-inline"></a>
+            </div>
+
+            <!--Page body-->
+            <div data-role="main" class="ui-content">
+                <ul class="cust" data-theme="c" data-role="listview" data-inset="true">
+                    <li class="li-heading"></li>
+				</ul>
+				
+				<table id="balTransTblData" data-role="table" data-mode="ui-responsive" class="ui-body-c ui-responsive table-stroke" data-inset="true">
+				<thead>
+					<tr class="ui-li-highlighted header">
+						
+						<th data-priority="1">Date</th>
+						<th data-priority="1">Chq</th>
+						<th data-priority="1">Reference</th>
+						<th data-priority="1" class="th3">Amt &pound;</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				
+				<tbody class="scroll">
+					
+					
+				</tbody>
+				
+				 <tfoot data-position="fixed">
+					<tr>
+						<td>Total</td>
+						<td></td>
+						<td></td>
+						<td class="th3"><span id="grandtotal"></span></td>
+                        <td></td>
+                        <td></td>
+					</tr>
+				</tfoot>
+			</table>
+			 
+            </div>
+            <!--Page footer-->
+			<div class="custFooter ui-footer ui-bar-inherit ui-footer-fixed" data-role="footer" data-position="fixed" role="banner" data-tap-toggle="false" data-hide-during-focus="false">
+			 <!--<div data-theme="f" class="ui-li-static ui-body-f ui-last-child" id="listPaymentDues">
+                   <span class="totalColl">Total</span><span class="total"></span>
+			 </div>-->
+            <div class="footer-btngroup" >                        
+			<div class="footer-btn-group btn-group-justified" role="group" aria-label="..." style="">
+				<div id="footer-dashBtn1">
+					<button type="button" data-mini="true" onclick="" id="btnAdd" data-theme="a" class="btn btn-success ui-btn ui-btn-a ui-shadow ui-corner-all ui-mini">Add</button>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+        </div>
+        <!--Page end-->
+
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="icon" href="img/favicon.png">
+    <title>Journey Balance</title>
+
+    <!-- load from CDN -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  
+    <!-- CSS Libraries-->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/selectionSummary.css" rel="stylesheet">
+	<link href="css/journeyBalance.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <img src="img/logo.png" alt="logo" class="img-rounded">
+				<div class="menuItemsDiv">
+					<a href="/balancing/login/" class="menuHome font17px">Home</a>
+				</div>
+				<div class="menuRight" align="right">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<span class="menuAgentName" id="menuAgentName"></span>
+				</div>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+		
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Journey Balance</h1>
+                    </div>
+					<!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+				<div class="row journeySummaryRow">
+					<div class="col-lg-12 agentWeekInfo">
+						<span class="journeyLabel">Journey:&nbsp;</span><span class="journeyNumber" id="journeyNumber"></span> - <span class="branchName" id="branchName"></span><br>
+						<span class="displayWeekLabel">Week:&nbsp;</span><span class="displayWeekStartValue" id="displayWeekStartValue"></span> - <span class="displayWeekEndValue" id="displayWeekEndValue"></span>
+						<span class="closeWeekStatus font12px" id="closeWeekStatus"></span>
+                    </div>
+					<div class="col-lg-12 journeyListInfo">
+						<table class="table journeyListTable">
+							<thead class="bgBeige">
+								<tr class="journeyBalanceSummaryTheadRow">
+									<th class=""></th>
+									<th class=""></th>
+									<th>Cash</th>
+									<th>Card</th>
+									<th>Central</th>
+									<th>Loans</th>
+									<th>RAF</th>
+									<th>Float</th>
+									<th>Banked</th>
+									<th>Short/Over</th>
+									<th>Agent/BM S/O</th>
+								</tr>
+							</thead>
+							<tbody class="journeyBalanceSummaryTbody" id="journeyBalanceSummaryTbody">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<br/>
+				<!-- Declared & Actual total received row start -->
+				<div class="row totalReceivedRow">
+						<div class="col-lg-12 totalReceivedColumn6">
+						<div class="well well-lg totalReceivedColumnWell1">
+						<div class="col-lg-12 declaredActualLabelDiv bgYellowGreen">
+							<div class="col-lg-6 floatRight actualLabelDiv">
+								<span class="actualLabel floatLeft fontBold">Actual</span>
+							</div>
+							<div class="col-lg-6 floatLeft declaredLabelDiv">
+								<span class="declaredLabel floatRight fontBold">Declared</span>
+							</div>
+						</div>
+						<div class="col-lg-12 totalRecvDiv bgYellowGreen">
+							<div class="col-lg-6 totalDeclaredRecvLabelDiv floatLeft">
+								<span class="declaredTotalRecvLabel floatLeft fontBold">Total Received</span>
+								<span class="declaredTotalRecvAmt floatRight fontBold" id="declaredTotalRecvAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualRecvLabelDiv floatRight">
+								<span class="actualTotalRecvAmt floatRight fontBold" id="actualTotalRecvAmt"></span>
+							</div>
+						</div>
+						<div class="col-lg-12 collectionsRecvDiv bgFoam">
+							<div class="col-lg-6 totalDeclaredCollectionsDiv floatLeft">
+								<span class="declaredTotalCollLabel floatLeft fontBold">Cash</span>
+								<span class="declaredTotalCollAmt floatRight fontBold" id="declaredTotalCollAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualCollectionsDiv floatRight">
+								<span class="actualTotalCollAmt floatRight fontBold" id="actualTotalCollAmt"></span>
+							</div>
+						</div>
+						
+						
+						<table class="table totalRecvTableColl" id="totalRecvTableColl">
+							
+						</table>
+						
+						<div class="col-lg-12 floatRecvDiv bgFoam">
+							<div class="col-lg-6 totalDeclaredFloatDiv floatLeft">
+								<span class="declaredTotalFloatLabel floatLeft fontBold">Float</span>
+								<span class="declaredTotalFloatAmt floatRight fontBold" id="declaredTotalFloatAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualFloatDiv floatRight">
+								<span class="actualTotalFloatAmt floatRight fontBold" id="actualTotalFloatAmt"></span>
+							</div>
+						</div>
+						
+						<table class="table totalRecvTableFloat" id="totalRecvTableFloat">
+							
+						</table>
+						</div>
+                    </div>
+					
+                </div>
+				<!-- Declared & Actual total received row end -->
+				<br>
+				<!-- Declared & Actual total paid out row start -->
+				
+				<div class="row totalPaidOutRow">
+						<div class="col-lg-12 totalPaidOutColumn6">
+						<div class="well well-lg totalPaidOutColumnWell1">
+						
+						<div class="col-lg-12 totalPaidOutDiv bgYellowGreen">
+							<div class="col-lg-6 totalDeclaredPaidOutLabelDiv floatLeft">
+								<span class="declaredTotalPaidOutLabel floatLeft fontBold">Total Paid Out</span>
+								<span class="declaredTotalPaidOutAmt floatRight fontBold" id="declaredTotalPaidOutAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualPaidOutLabelDiv floatRight">
+								<span class="actualTotalPaidOutAmt floatRight fontBold" id="actualTotalPaidOutAmt"></span>
+							</div>
+						</div>
+						<div class="col-lg-12 loansDiv bgFoam">
+							<div class="col-lg-6 totalDeclaredLoansDiv floatLeft">
+								<span class="declaredTotalLoansLabel floatLeft fontBold">Loans</span>
+								<span class="declaredTotalLoansAmt floatRight fontBold" id="declaredTotalLoansAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualLoansDiv floatRight">
+								<span class="actualTotalLoansAmt floatRight fontBold" id="actualTotalLoansAmt"></span>
+							</div>
+						</div>
+										
+						<table class="table totalPaidOutTableLoans" id="totalPaidOutTableLoans">
+							
+						</table>
+						
+						<div class="col-lg-12 bankedDiv bgFoam">
+							<div class="col-lg-6 totalDeclaredBankedDiv floatLeft">
+								<span class="declaredTotalBankedLabel floatLeft fontBold">Banked</span>
+								<span class="declaredTotalBankedAmt floatRight fontBold" id="declaredTotalBankedAmt"></span>
+							</div>
+							<div class="col-lg-6 totalActualBankedDiv floatRight">
+								<span class="actualTotalBankedAmt floatRight fontBold" id="actualTotalBankedAmt"></span>
+							</div>
+						</div>
+						
+						<table class="table totalPaidOutTableBanked" id="totalPaidOutTableBanked">
+							
+						</table>
+						<div class="col-lg-12 rafDiv bgFoam">
+							<div class="col-lg-6 totalDeclaredRafDiv floatLeft">
+								<span class="declaredTotalRafLabel floatLeft fontBold">RAF</span>
+								<span class="declaredTotalRafAmt floatRight fontBold" id="declaredTotalRafAmt"></span>
+							</div>
+						</div>
+						
+						
+						
+						<table class="table totalPaidOutTableRaf" id="totalPaidOutTableRaf">
+							
+						</table>
+						</div>
+                    </div>
+					
+                </div>
+				<!-- Declared & Actual total paid out row end -->
+				
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+				<footer class="footer">
+			<div class="container">
+				<p class="text-muted"></p>
+			</div>
+		</footer>
+    </div>
+    <!-- /#wrapper -->
+
+	<img src="img/382.gif" id="loading-indicator" style="display:none" />
+	<div id="disablingDiv" ></div>
+	
+	<!-- JS Libraries -->
+    <script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/moment.min.js"></script>
+	<script src="js/lib/bootbox.min.js"></script>
+	
+    <!-- Custom JS -->
+	<script src="js/common/constants.js"></script>
+	<script src="js/common/services.js"></script>
+	<script src="js/common/common.js"></script>
+	<script src="js/common/callService.js"></script>
+	<script src="js/journeyBalance.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+	<!--CSS files-->
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>
+        
+        <!--Custom page css-->
+        <link href="css/login_old.css" rel="stylesheet" type="text/css"/>
+        
+        <!--JS files-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/lib/jquery.js" type="text/javascript"></script>
+        <script src="js/lib/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+        
+        <script src="js/common/common.js" type="text/javascript"></script>
+        <script src="js/common/constants.js" type="text/javascript"></script>
+        <script src="js/common/dataStorage.js" type="text/javascript"></script>
+        
+        <!--Custom page js-->
+        <script src="js/login_old.js" type="text/javascript"></script>
+        
+        
+    </head>    
+    <body>
+    <div data-role="page" data-theme="c">
+   
+    
+     <div class="noArea"></div>
+        <div class="error"></div>
+      <div class="login">
+      <label>Inputs</label>
+      <form method="post" action="dashboard.html">
+
+        <div class="ui-field-contain">
+            <input type="text" name="" id="userId" placeholder="Enter User Id">
+            <input type="text" name="" id="journeyId" placeholder="Enter Journey Id">
+        </div>
+            <input type="button" name="login" value="Submit" id="btnLogin">
+            <input type="button" name="clearData" value="Clear Data" id="btnClearData" onclick="dataStorage.dropTables();">
+            <input type="button" name="cardPayments" value="Card Payments" id="btnCardPayments" onclick="cardPaymentService.getCardPaymentInformation();">
+      </form>
+              
+
+    </div>
+    </div>
+    <script src="js/lib/date.js" type="text/javascript"></script>
+    <script src="js/lib/dateFormatter.js" type="text/javascript"></script>
+    <script src="js/common/callService.js" type="text/javascript"></script>
+    
+<img src="img/382.gif" id="loading-indicator" style="display:none" />
+<div id="disablingDiv" ></div>
+</body>
+</html>

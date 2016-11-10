@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.core.SDTCollections" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Collections App</name>
+    <description>
+    </description>
+    <content src="login.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+	<hook type="after_prepare" src="hooks/after_prepare/copy_icons.js" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+		<hook type="after_prepare" src="hooks/after_prepare/copy_icons.js" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+		<allow-navigation href="tel:*" />
+		<allow-navigation href="sms:*" />
+		<hook type="after_prepare" src="hooks/after_prepare/copy_icons.js" />
+        <preference name="AllowInlineMediaPlayback" value="false" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="EnableViewportScale" value="false" />
+        <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="SuppressesLongPressGesture" value="false" />
+		<preference name="Suppresses3DTouchGesture" value="false" />
+		<preference name="GapBetweenPages" value="0" />
+		<preference name="PageLength" value="0" />
+		<preference name="PaginationBreakingMode" value="page" />
+		<preference name="PaginationMode" value="unpaginated" />
+		<preference name="StatusBarOverlaysWebView" value="false" />
+		<preference name="StatusBarStyle" value="default" />
+		<preference name="HideKeyboardFormAccessoryBar" value="false" />
+        
+    </platform>
+</widget>

@@ -1,0 +1,961 @@
+/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: #f8f8f8;
+}
+div.container-fluid{
+	margin-top: 50px;
+}
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 0 20px;
+    min-height: 91vh;
+	background-color: #f6f6f6;
+	margin-bottom: -20px;
+	/*background-color: #f6f6f6;*/
+}
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        /*margin: 0 0 0 250px;*/
+        padding: 0 20px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+.page-header {
+    font-size: 20px;
+     padding-bottom: 0px; 
+     margin: 0px; 
+	 margin-left:-20px;
+     border-bottom: 0px solid #eee; 
+}
+
+.row {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	margin-right: -20px;
+    margin-left: -20px;
+}
+
+.bg-white {
+    background-color: #fff;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-btn-default {
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    padding: 6px 60px;
+	height: 40px;
+    width: 140px;
+	text-align: center;
+}
+
+.custom-btn-primary {
+    color: #fff;
+    background-color: #1f9bde;
+    border-color: #1f9bde;
+	height: 40px;
+	width: 140px;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td{
+   background-color: #fcf8e3;
+} 
+
+.table-striped>tbody>tr:nth-child(odd)>td{
+   background-color: #fff;
+}
+.table>thead>tr>th
+{
+   border-bottom: 0px;
+ }
+ .table-hover>tbody>tr:hover{
+	 background-color:none !important;
+ }
+.table>thead
+{
+   /*background-color: #d9edf7;*/
+   background-color: #e8f5fd;
+   border-bottom: 0px
+ }
+ 
+ .table>tfoot
+{
+   background-color: #fbfbe5;
+   border-bottom: 0px;
+   border-top: 0px;
+ }
+.table{
+	margin-bottom: 8px;
+    margin-top: 8px; 
+}   
+.img-icon{
+    border-radius: 0px;
+    width: 20px;
+}
+/*table tr, th, td row height*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+
+
+.navbar-default{
+    border-bottom-width: 4px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ccd627;
+}
+
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #999;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+}
+
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+.chat-panel .panel-body {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.login-panel {
+    margin-top: 25%;
+}
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: 0 0;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    float: right;
+    font-family: fontawesome;
+    color: rgba(50,50,50,.5);
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.show-grid [class^=col-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #eee!important;
+}
+
+.show-grid {
+    margin: 15px 0;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+.img-rounded {
+    border-radius: 0px;
+    width: 40px;
+	margin-left: 45px;
+}
+
+.modal-dialog {
+    width: 280px;
+    margin: 170px auto;
+}
+
+.custom-modalbtn-primary {
+    color: #fff;
+    background-color: #1f9bde;
+    border-color: #1f9bde;
+}
+
+.custom-modalbtn-default {
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+/****************************common font styles*****************************/
+.fontBlack{
+	color: black !important;
+}
+.fontBlue{
+	color: #1f9bde;
+}
+.fontAmber{
+	color: #ffb44f !important;	
+}
+.font12px{
+	font-size: 12px !important;
+	font-weight: normal !important;
+}
+.font14px{
+	font-size: 14px !important;
+	font-weight: normal !important;
+}
+.font17px{
+	font-size: 17px !important;
+	font-weight: normal !important;
+}
+.font18px{
+	font-size: 18px !important;
+	font-weight: normal !important;
+}
+.font20px{
+	font-size: 20px !important;
+	font-weight: normal !important;
+}
+.fontBold{
+	font-weight: bold !important;
+}
+.fontNormal{
+	font-weight: normal !important;
+}
+
+/****************************blue button***********************************/
+.blueButton{
+	background-color: #1f9bde;
+	color: white;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/****************************navbar links**********************************/
+div.menuItemsDiv{
+    display: inline;
+    position: absolute;
+    top: 20px;
+    left: 134px;
+    font-weight: bold;
+}
+div.menuRight{
+	display: inline; 
+	position: absolute;
+	top: 20px; 
+	right: 30px;
+	font-weight: bold;
+}
+
+/****************************footer*********************************/
+footer{
+	/*background-color: #ccd627;
+	line-height: 10px;
+	display: table;
+	width: 100%;*/
+margin-top: 6px;
+    background-color: #ccd627;
+    line-height: 6px;
+    display: table;
+    width: 100%;
+}
+footer > div.container > p.text-muted{
+	left: -54px;
+	display: table-cell;
+	vertical-align: middle;
+	color: black;
+	padding: 6px;
+}
+
+/*******************Sticky footer******************/
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  overflow: hidden;
+}
+div#wrapper{
+	overflow-y: auto;
+    height: 100%;
+}
+html body .container-fluid .body-content {
+  position: absolute;
+  top: 50px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/***********************************************Loader************************************************/
+  #loading-indicator {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  z-index:1102;
+  opacity:1 !important;
+}
+#disablingDiv
+{
+    /* Do not display it on entry */
+    display: none; 
+ 
+    /* Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page */
+    z-index:1002;
+
+    /* make it cover the whole screen */
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+
+    /* make it white but fully transparent */
+    background-color: white; 
+    opacity:.8; 
+    filter: alpha(opacity=00); 
+}
+/***********************common alignment classes******************************/
+.textLeft{
+	text-align: left;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+
+/***********************common background color classes******************************/
+.bgBeige{
+	background-color: #fcfbe6 !important;
+}
+.bgChenin{
+	background-color: #d4df65 !important;
+}
+.bgYellowGreen{
+	background-color: #dee585 !important;
+}
+.bgFoam{
+	background-color: #e8f5fd !important;
+}
+
+/***********************common border classes******************************/
+.borderRight{
+	border-right: 1px solid black;
+}
+
+/******************************common table alignments for selectionSummary & journeyBalanceReport start**********************************/
+
+.displayFlex{
+	display: flex !important;	
+}
+
+.userTable, .journeyTable, .branchTable, .userJourneyTable,
+.actualTotalRecvTableColl, .actualTotalRecvTableFloat,
+.declaredTotalPaidOutTableFloat, .actualTotalPaidOutTableColl, .actualTotalPaidOutTableFloat
+{
+	width: 100%;
+}
+.totalRecvTableColl, .totalRecvTableFloat, .totalPaidOutTableLoans, .totalPaidOutTableBanked
+{
+	width: 94.9% !important;
+	margin-left: 66px !important;
+}
+.totalRecvTableColl td, .totalRecvTableFloat td, .totalPaidOutTableLoans td, .totalPaidOutTableBanked td, .totalPaidOutTableRaf td{
+	/*height: 2.1em !important;*/
+}
+.totalPaidOutTableRaf{
+	width: 47.5%;
+	margin-left: 66px;
+}
+
+.userTable thead,.userTable tbody,.userTable tfoot,.userTable tr,.userTable td,.userTable th,
+.userJourneyTable thead,.userJourneyTable tbody,.userJourneyTable tfoot, .userJourneyTable tr,.userJourneyTable td,.userJourneyTable th,
+.journeyTable thead,.journeyTable tbody,.journeyTable tfoot, .journeyTable tr,.journeyTable td,.journeyTable th,
+.branchTable thead,.branchTable tbody,.branchTable tfoot, .branchTable tr,.branchTable td,.branchTable th,
+.totalRecvTableColl thead,.totalRecvTableColl tbody,.totalRecvTableColl tfoot, .totalRecvTableColl tr,.totalRecvTableColl td,.totalRecvTableColl th,
+.totalRecvTableFloat thead,.totalRecvTableFloat tbody,.totalRecvTableFloat tfoot, .totalRecvTableFloat tr,.totalRecvTableFloat td,.totalRecvTableFloat th,
+.actualTotalRecvTableColl thead,.actualTotalRecvTableColl tbody,.actualTotalRecvTableColl tfoot, .actualTotalRecvTableColl tr,.actualTotalRecvTableColl td,.actualTotalRecvTableColl th,
+.actualTotalRecvTableFloat thead,.actualTotalRecvTableFloat tbody,.actualTotalRecvTableFloat tfoot, .actualTotalRecvTableFloat tr,.actualTotalRecvTableFloat td,.actualTotalRecvTableFloat th,
+.totalPaidOutTableLoans thead,.totalPaidOutTableLoans tbody,.totalPaidOutTableLoans tfoot, .totalPaidOutTableLoans tr,.totalPaidOutTableLoans td,.totalPaidOutTableLoans th,
+.totalPaidOutTableBanked thead,.totalPaidOutTableBanked tbody,.totalPaidOutTableBanked tfoot, .totalPaidOutTableBanked tr,.totalPaidOutTableBanked td,.totalPaidOutTableBanked th,
+.declaredTotalPaidOutTableFloat thead,.declaredTotalPaidOutTableFloat tbody,.declaredTotalPaidOutTableFloat tfoot, .declaredTotalPaidOutTableFloat tr,.declaredTotalPaidOutTableFloat td,.declaredTotalPaidOutTableFloat th,
+.actualTotalPaidOutTableColl thead,.actualTotalPaidOutTableColl tbody,.actualTotalPaidOutTableColl tfoot, .actualTotalPaidOutTableColl tr,.actualTotalPaidOutTableColl td,.actualTotalPaidOutTableColl th,
+.actualTotalPaidOutTableFloat thead,.actualTotalPaidOutTableFloat tbody,.actualTotalPaidOutTableFloat tfoot, .actualTotalPaidOutTableFloat tr,.actualTotalPaidOutTableFloat td,.actualTotalPaidOutTableFloat th,
+.totalPaidOutTableRaf thead,.totalPaidOutTableRaf tbody,.totalPaidOutTableRaf tfoot, .totalPaidOutTableRaf tr,.totalPaidOutTableRaf td,.totalPaidOutTableRaf th
+ { display: block; }
+
+.userTable tr:after, .userJourneyTable tr:after, .journeyTable tr:after, .branchTable tr:after , .totalRecvTableColl tr:after,
+.totalRecvTableFloat tr:after, .actualTotalRecvTableColl tr:after, .actualTotalRecvTableFloat tr:after, .totalPaidOutTableLoans tr:after, .totalPaidOutTableBanked tr:after, .declaredTotalPaidOutTableFloat tr:after, .actualTotalPaidOutTableColl tr:after,
+.actualTotalPaidOutTableFloat tr:after, .totalPaidOutTableRaf tr:after
+{
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+
+
+.userTable tbody td,.userTable thead th,.userTable tfoot td , 
+.userJourneyTable tbody td,.userJourneyTable thead th,.userJourneyTable tfoot td , 
+.journeyTable  tbody td,.journeyTable thead th,.journeyTable tfoot td,
+.branchTable tbody td,.branchTable thead th,.branchTable tfoot td,
+.totalRecvTableColl tbody td,.totalRecvTableColl thead th,.totalRecvTableColl tfoot td,
+.totalRecvTableFloat tbody td,.totalRecvTableFloat thead th,.totalRecvTableFloat tfoot td,
+.actualTotalRecvTableColl tbody td,.actualTotalRecvTableColl thead th,.actualTotalRecvTableColl tfoot td,
+.actualTotalRecvTableFloat tbody td,.actualTotalRecvTableFloat thead th,.actualTotalRecvTableFloat tfoot td,
+.totalPaidOutTableLoans tbody td,.totalPaidOutTableLoans thead th,.totalPaidOutTableLoans tfoot td,
+.totalPaidOutTableBanked tbody td,.totalPaidOutTableBanked thead th,.totalPaidOutTableBanked tfoot td,
+.declaredTotalPaidOutTableFloat tbody td,.declaredTotalPaidOutTableFloat thead th,.declaredTotalPaidOutTableFloat tfoot td,
+.actualTotalPaidOutTableColl tbody td,.actualTotalPaidOutTableColl thead th,.actualTotalPaidOutTableColl tfoot td,
+.actualTotalPaidOutTableFloat tbody td,.actualTotalPaidOutTableFloat thead th,.actualTotalPaidOutTableFloat tfoot td,
+.totalPaidOutTableRaf tbody td,.totalPaidOutTableRaf thead th,.totalPaidOutTableRaf tfoot td
+{float: left;}   
+	
+.userTable th:nth-of-type(1), .userTable td:nth-of-type(1) {width:5%;}
+.userTable th:nth-of-type(2), .userTable td:nth-of-type(2) {width:25%;}
+.userTable th:nth-of-type(3), .userTable td:nth-of-type(3) {width:15%;}
+.userTable th:nth-of-type(4), .userTable td:nth-of-type(4) {width:20%;}
+.userTable th:nth-of-type(5), .userTable td:nth-of-type(5) {width:35%;}
+
+.userJourneyTable th:nth-of-type(1), .userJourneyTable td:nth-of-type(1) {width:7%;}
+.userJourneyTable th:nth-of-type(2), .userJourneyTable td:nth-of-type(2) {width:31%;}
+.userJourneyTable th:nth-of-type(3), .userJourneyTable td:nth-of-type(3) {width:31%;}
+.userJourneyTable th:nth-of-type(4), .userJourneyTable td:nth-of-type(4) {width:31%;}
+
+.journeyTable th:nth-of-type(1), .journeyTable td:nth-of-type(1) {width:3%;}
+.journeyTable th:nth-of-type(2), .journeyTable td:nth-of-type(2) {width:10%;}
+.journeyTable th:nth-of-type(3), .journeyTable td:nth-of-type(3) {width:15%;}
+.journeyTable th:nth-of-type(4), .journeyTable td:nth-of-type(4) {width:72%;}
+
+.branchTable th:nth-of-type(1), .branchTable td:nth-of-type(1) {width:3%;}
+.branchTable th:nth-of-type(2), .branchTable td:nth-of-type(2) {width:15%;}
+.branchTable th:nth-of-type(3), .branchTable td:nth-of-type(3) {width:15%;}
+.branchTable th:nth-of-type(4), .branchTable td:nth-of-type(4) {width:66%;}
+
+
+.actualTotalPaidOutTableFloat th:nth-of-type(1), .totalPaidOutTableBanked th:nth-of-type(1) {width: 18%;}
+.actualTotalPaidOutTableFloat th:nth-of-type(2), .totalPaidOutTableBanked th:nth-of-type(2) {width: 14%;}
+.actualTotalPaidOutTableFloat th:nth-of-type(3), .totalPaidOutTableBanked th:nth-of-type(3) {width: 10%;}
+.actualTotalPaidOutTableFloat th:nth-of-type(4), .totalPaidOutTableBanked th:nth-of-type(4) {width: 30%;}
+.actualTotalPaidOutTableFloat th:nth-of-type(5), .totalPaidOutTableBanked th:nth-of-type(5) {width: 26%;}
+.actualTotalPaidOutTableFloat td:nth-of-type(1), .totalPaidOutTableBanked td:nth-of-type(1) {width: 18%;}
+.actualTotalPaidOutTableFloat td:nth-of-type(2), .totalPaidOutTableBanked td:nth-of-type(2) {width: 15%;}
+.actualTotalPaidOutTableFloat td:nth-of-type(3), .totalPaidOutTableBanked td:nth-of-type(3) {width: 10%;}
+.actualTotalPaidOutTableFloat td:nth-of-type(4), .totalPaidOutTableBanked td:nth-of-type(4) {width: 31%;}
+.actualTotalPaidOutTableFloat td:nth-of-type(5), .totalPaidOutTableBanked td:nth-of-type(5) {width: 26%;}
+.actualTotalPaidOutTableFloat tfoot td:nth-of-type(5), .totalPaidOutTableBanked tfoot td:nth-of-type(5) {width: 23%;}
+
+.actualTotalPaidOutTableColl th:nth-of-type(1), .declaredTotalPaidOutTableFloat th:nth-of-type(1), .totalPaidOutTableLoans th:nth-of-type(1), .actualTotalRecvTableFloat th:nth-of-type(1), .actualTotalRecvTableColl th:nth-of-type(1), .totalRecvTableFloat th:nth-of-type(1) {width:18%;}
+.actualTotalPaidOutTableColl th:nth-of-type(2), .declaredTotalPaidOutTableFloat th:nth-of-type(2), .totalPaidOutTableLoans th:nth-of-type(2), .actualTotalRecvTableFloat th:nth-of-type(2), .actualTotalRecvTableColl th:nth-of-type(2), .totalRecvTableFloat th:nth-of-type(2) {width:25%;}
+.actualTotalPaidOutTableColl th:nth-of-type(3), .declaredTotalPaidOutTableFloat th:nth-of-type(3), .totalPaidOutTableLoans th:nth-of-type(3), .actualTotalRecvTableFloat th:nth-of-type(3), .actualTotalRecvTableColl th:nth-of-type(3), .totalRecvTableFloat th:nth-of-type(3) {width:27%;}
+.actualTotalPaidOutTableColl th:nth-of-type(4), .declaredTotalPaidOutTableFloat th:nth-of-type(4), .totalPaidOutTableLoans th:nth-of-type(4), .actualTotalRecvTableFloat th:nth-of-type(4), .actualTotalRecvTableColl th:nth-of-type(4), .totalRecvTableFloat th:nth-of-type(4) {width:28%;}
+.actualTotalPaidOutTableColl td:nth-of-type(1), .declaredTotalPaidOutTableFloat td:nth-of-type(1), .totalPaidOutTableLoans td:nth-of-type(1), .actualTotalRecvTableFloat td:nth-of-type(1), .actualTotalRecvTableColl td:nth-of-type(1), .totalRecvTableFloat td:nth-of-type(1) {width:18.5%;}
+.actualTotalPaidOutTableColl td:nth-of-type(2), .declaredTotalPaidOutTableFloat td:nth-of-type(2), .totalPaidOutTableLoans td:nth-of-type(2), .actualTotalRecvTableFloat td:nth-of-type(2), .actualTotalRecvTableColl td:nth-of-type(2), .totalRecvTableFloat td:nth-of-type(2) {width:25.5%;}
+.actualTotalPaidOutTableColl td:nth-of-type(3), .declaredTotalPaidOutTableFloat td:nth-of-type(3), .totalPaidOutTableLoans td:nth-of-type(3), .actualTotalRecvTableFloat td:nth-of-type(3), .actualTotalRecvTableColl td:nth-of-type(3), .totalRecvTableFloat td:nth-of-type(3) {width:27%;}
+.actualTotalPaidOutTableColl td:nth-of-type(4), .declaredTotalPaidOutTableFloat td:nth-of-type(4), .totalPaidOutTableLoans td:nth-of-type(4), .actualTotalRecvTableFloat td:nth-of-type(4), .actualTotalRecvTableColl td:nth-of-type(4), .totalRecvTableFloat td:nth-of-type(4) {width:29%;}
+.actualTotalPaidOutTableColl tfoot td:nth-of-type(4), .declaredTotalPaidOutTableFloat tfoot td:nth-of-type(4), .totalPaidOutTableLoans tfoot td:nth-of-type(4), .actualTotalRecvTableFloat tfoot td:nth-of-type(4), .actualTotalRecvTableColl tfoot td:nth-of-type(4), .totalRecvTableFloat tfoot td:nth-of-type(4) {width:26%;}
+
+/******************************Scrollable table**********************************/
+/*
+.userTable tbody , .userJourneyTable tbody, .journeyTable tbody, .branchTable tbody{
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.totalRecvTableColl tbody, .totalRecvTableFloat tbody, .actualTotalRecvTableColl tbody, .actualTotalRecvTableFloat tbody,
+.totalPaidOutTableLoans tbody, .totalPaidOutTableBanked tbody, .declaredTotalPaidOutTableFloat tbody,
+.actualTotalPaidOutTableColl tbody, .actualTotalPaidOutTableFloat tbody, .totalPaidOutTableRaf tbody
+{
+	height: 90px;
+	overflow-y: scroll;
+} 
+
+.totalRecvTableColl th:nth-of-type(1) {width: 10%;}
+.totalRecvTableColl th:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableColl th:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableColl th:nth-of-type(4) {width: 7%;}
+.totalRecvTableColl th:nth-of-type(5) {width: 7%;}
+.totalRecvTableColl th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalRecvTableColl th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalRecvTableColl th:nth-of-type(8) {width: 10%;}
+.totalRecvTableColl td:nth-of-type(1) {width: 10%;}
+.totalRecvTableColl td:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableColl td:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableColl td:nth-of-type(4) {width: 7.8%;}
+.totalRecvTableColl td:nth-of-type(5) {width: 7%;}
+.totalRecvTableColl td:nth-of-type(6) {width: 17.7%; padding-left:40px;}
+.totalRecvTableColl td:nth-of-type(7) {width: 15.7%; padding-left:60px;}
+.totalRecvTableColl td:nth-of-type(8) {width: 8%;}
+.totalRecvTableColl tfoot td:nth-of-type(1) {width:10%;}
+.totalRecvTableColl tfoot td:nth-of-type(4) {width:7%;}
+.totalRecvTableColl tfoot td:nth-of-type(5) {width:7%;} 
+
+
+.totalRecvTableFloat th:nth-of-type(1) {width: 10%;}
+.totalRecvTableFloat th:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableFloat th:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableFloat th:nth-of-type(4) {width: 7%;}
+.totalRecvTableFloat th:nth-of-type(5) {width: 7%;}
+.totalRecvTableFloat th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalRecvTableFloat th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalRecvTableFloat th:nth-of-type(8) {width: 10%;}
+.totalRecvTableFloat td:nth-of-type(1) {width: 10%;}
+.totalRecvTableFloat td:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableFloat td:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableFloat td:nth-of-type(4) {width: 7.8%;}
+.totalRecvTableFloat td:nth-of-type(5) {width: 7%;}
+.totalRecvTableFloat td:nth-of-type(6) {width: 17.7%; padding-left:40px;}
+.totalRecvTableFloat td:nth-of-type(7) {width: 15.7%; padding-left:60px;}
+.totalRecvTableFloat td:nth-of-type(8) {width: 8%;}
+.totalRecvTableFloat tfoot td:nth-of-type(1) {width:10%;}
+.totalRecvTableFloat tfoot td:nth-of-type(4) {width:7%;}
+.totalRecvTableFloat tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableLoans th:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableLoans th:nth-of-type(2) {width: 15.5%;}
+.totalPaidOutTableLoans th:nth-of-type(3) {width: 17.5%;}
+.totalPaidOutTableLoans th:nth-of-type(4) {width: 7%;}
+.totalPaidOutTableLoans th:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableLoans th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalPaidOutTableLoans th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalPaidOutTableLoans th:nth-of-type(8) {width: 10%;}
+.totalPaidOutTableLoans td:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableLoans td:nth-of-type(2) {width: 16%;}
+.totalPaidOutTableLoans td:nth-of-type(3) {width: 17%;}
+.totalPaidOutTableLoans td:nth-of-type(4) {width: 7.8%;}
+.totalPaidOutTableLoans td:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableLoans td:nth-of-type(6) {width: 17.7%; padding-left:40px;}
+.totalPaidOutTableLoans td:nth-of-type(7) {width: 15.7%; padding-left:60px;}
+.totalPaidOutTableLoans td:nth-of-type(8) {width: 8%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(1) {width:10%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(4) {width:7%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableBanked th:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableBanked th:nth-of-type(2) {width: 10%;}
+.totalPaidOutTableBanked th:nth-of-type(3) {width: 5.5%;}
+.totalPaidOutTableBanked th:nth-of-type(4) {width: 17.5%;}
+.totalPaidOutTableBanked th:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableBanked th:nth-of-type(6) {width: 7%;}
+.totalPaidOutTableBanked th:nth-of-type(7) {width: 16.5%; padding-left:40px;}
+.totalPaidOutTableBanked th:nth-of-type(8) {width: 5.5%; padding-left:6px;}
+.totalPaidOutTableBanked th:nth-of-type(9) {width: 11%;}
+.totalPaidOutTableBanked th:nth-of-type(10) {width: 10%;}
+.totalPaidOutTableBanked td:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableBanked td:nth-of-type(2) {width: 10.4%;}
+.totalPaidOutTableBanked td:nth-of-type(3) {width: 5.5%;}
+.totalPaidOutTableBanked td:nth-of-type(4) {width: 17.5%;}
+.totalPaidOutTableBanked td:nth-of-type(5) {width: 7.5%;}
+.totalPaidOutTableBanked td:nth-of-type(6) {width: 7%;}
+.totalPaidOutTableBanked td:nth-of-type(7) {width: 16.5%; padding-left:40px;}
+.totalPaidOutTableBanked td:nth-of-type(8) {width: 5.7%;}
+.totalPaidOutTableBanked td:nth-of-type(9) {width: 11.3%;}
+.totalPaidOutTableBanked td:nth-of-type(10) {width: 7%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(1) {width:10%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(4) {width:7%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableRaf th:nth-of-type(1) {width:20%;} 
+.totalPaidOutTableRaf th:nth-of-type(2) {width:29%;}
+.totalPaidOutTableRaf th:nth-of-type(3) {width:34%;}
+.totalPaidOutTableRaf th:nth-of-type(4) {width:12.5%;}
+.totalPaidOutTableRaf td:nth-of-type(1) {width:20%;}
+.totalPaidOutTableRaf td:nth-of-type(2) {width:30%;}
+.totalPaidOutTableRaf td:nth-of-type(3) {width:34%;}
+.totalPaidOutTableRaf td:nth-of-type(4) {width:14.5%;}
+*/
+
+/******************************Non-scrollable table**********************************/
+.totalRecvTableColl th:nth-of-type(1) {width: 10%;}
+.totalRecvTableColl th:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableColl th:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableColl th:nth-of-type(4) {width: 7%;}
+.totalRecvTableColl th:nth-of-type(5) {width: 7%;}
+.totalRecvTableColl th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalRecvTableColl th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalRecvTableColl th:nth-of-type(8) {width: 10%;}
+.totalRecvTableColl td:nth-of-type(1) {width: 10%;}
+.totalRecvTableColl td:nth-of-type(2) {width: 15.5%; word-break: break-all;}
+.totalRecvTableColl td:nth-of-type(3) {width: 17.5%; word-break: break-all;}
+.totalRecvTableColl td:nth-of-type(4) {width: 7%;}
+.totalRecvTableColl td:nth-of-type(5) {width: 7%;}
+.totalRecvTableColl td:nth-of-type(6) {width: 17.5%; padding-left:40px; word-break: break-all;}
+.totalRecvTableColl td:nth-of-type(7) {width: 15.5%; padding-left:60px; word-break: break-all;}
+.totalRecvTableColl td:nth-of-type(8) {width: 10%;}
+.totalRecvTableColl tfoot td:nth-of-type(1) {width:10%;}
+.totalRecvTableColl tfoot td:nth-of-type(4) {width:7%;}
+.totalRecvTableColl tfoot td:nth-of-type(5) {width:7%;}
+
+
+.totalRecvTableFloat th:nth-of-type(1) {width: 10%;}
+.totalRecvTableFloat th:nth-of-type(2) {width: 15.5%;}
+.totalRecvTableFloat th:nth-of-type(3) {width: 17.5%;}
+.totalRecvTableFloat th:nth-of-type(4) {width: 7%;}
+.totalRecvTableFloat th:nth-of-type(5) {width: 7%;}
+.totalRecvTableFloat th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalRecvTableFloat th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalRecvTableFloat th:nth-of-type(8) {width: 10%;}
+.totalRecvTableFloat td:nth-of-type(1) {width: 10%;}
+.totalRecvTableFloat td:nth-of-type(2) {width: 15.5%; word-break: break-all;}
+.totalRecvTableFloat td:nth-of-type(3) {width: 17.5%; word-break: break-all;}
+.totalRecvTableFloat td:nth-of-type(4) {width: 7%;}
+.totalRecvTableFloat td:nth-of-type(5) {width: 7%;}
+.totalRecvTableFloat td:nth-of-type(6) {width: 17.5%; padding-left:40px; word-break: break-all;}
+.totalRecvTableFloat td:nth-of-type(7) {width: 15.5%; padding-left:60px; word-break: break-all;}
+.totalRecvTableFloat td:nth-of-type(8) {width: 10%;}
+.totalRecvTableFloat tfoot td:nth-of-type(1) {width:10%;}
+.totalRecvTableFloat tfoot td:nth-of-type(4) {width:7%;}
+.totalRecvTableFloat tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableLoans th:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableLoans th:nth-of-type(2) {width: 15.5%;}
+.totalPaidOutTableLoans th:nth-of-type(3) {width: 17.5%;}
+.totalPaidOutTableLoans th:nth-of-type(4) {width: 7%;}
+.totalPaidOutTableLoans th:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableLoans th:nth-of-type(6) {width: 17.5%; padding-left:40px;}
+.totalPaidOutTableLoans th:nth-of-type(7) {width: 15.5%; padding-left:60px;}
+.totalPaidOutTableLoans th:nth-of-type(8) {width: 10%;}
+.totalPaidOutTableLoans td:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableLoans td:nth-of-type(2) {width: 15.5%; word-break: break-all;}
+.totalPaidOutTableLoans td:nth-of-type(3) {width: 17.5%; word-break: break-all;}
+.totalPaidOutTableLoans td:nth-of-type(4) {width: 7%;}
+.totalPaidOutTableLoans td:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableLoans td:nth-of-type(6) {width: 17.5%; padding-left:40px; word-break: break-all;}
+.totalPaidOutTableLoans td:nth-of-type(7) {width: 15.5%; padding-left:60px; word-break: break-all;}
+.totalPaidOutTableLoans td:nth-of-type(8) {width: 10%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(1) {width:10%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(4) {width:7%;}
+.totalPaidOutTableLoans tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableBanked th:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableBanked th:nth-of-type(2) {width: 10%;}
+.totalPaidOutTableBanked th:nth-of-type(3) {width: 5.5%;}
+.totalPaidOutTableBanked th:nth-of-type(4) {width: 17.5%;}
+.totalPaidOutTableBanked th:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableBanked th:nth-of-type(6) {width: 7%;}
+.totalPaidOutTableBanked th:nth-of-type(7) {width: 16.5%; padding-left:40px;}
+.totalPaidOutTableBanked th:nth-of-type(8) {width: 5.5%; padding-left:6px;}
+.totalPaidOutTableBanked th:nth-of-type(9) {width: 11%;}
+.totalPaidOutTableBanked th:nth-of-type(10) {width: 10%;}
+.totalPaidOutTableBanked td:nth-of-type(1) {width: 10%;}
+.totalPaidOutTableBanked td:nth-of-type(2) {width: 10%; word-break: break-all;}
+.totalPaidOutTableBanked td:nth-of-type(3) {width: 5.5%;}
+.totalPaidOutTableBanked td:nth-of-type(4) {width: 17.5%; word-break: break-all;}
+.totalPaidOutTableBanked td:nth-of-type(5) {width: 7%;}
+.totalPaidOutTableBanked td:nth-of-type(6) {width: 7%;}
+.totalPaidOutTableBanked td:nth-of-type(7) {width: 16.5%; padding-left:40px; word-break: break-all;}
+.totalPaidOutTableBanked td:nth-of-type(8) {width: 5.5%;}
+.totalPaidOutTableBanked td:nth-of-type(9) {width: 11%; word-break: break-all;}
+.totalPaidOutTableBanked td:nth-of-type(10) {width: 10%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(1) {width:10%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(4) {width:7%;}
+.totalPaidOutTableBanked tfoot td:nth-of-type(5) {width:7%;}
+
+.totalPaidOutTableRaf th:nth-of-type(1) {width:20%;} 
+.totalPaidOutTableRaf th:nth-of-type(2) {width:31%;}
+.totalPaidOutTableRaf th:nth-of-type(3) {width:32%;}
+.totalPaidOutTableRaf th:nth-of-type(4) {width:17%;}
+.totalPaidOutTableRaf td:nth-of-type(1) {width:20%;}
+.totalPaidOutTableRaf td:nth-of-type(2) {width:31%; word-break: break-all;}
+.totalPaidOutTableRaf td:nth-of-type(3) {width:32%; word-break: break-all;}
+.totalPaidOutTableRaf td:nth-of-type(4) {width:17%;}
+/******************************common table alignments for selectionSummary & journeyBalanceReport end**********************************/
+

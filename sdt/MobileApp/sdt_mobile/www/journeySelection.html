@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+	<!--CSS files-->
+        <link href="css/lib/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+        <link href="css/themes/sdt_mobile_themes.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+		
+		
+        <!--Custom page css-->
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/journeySelection.css" rel="stylesheet" type="text/css"/>
+        
+        <!--JS files-->	
+        <script src="cordova.js"></script>
+        <script src="js/lib/jquery.js"></script>
+		<script src="js/lib/jquery.mobile-1.4.5.js"></script>
+		<script src="js/lib/moment.min.js" type="text/javascript"></script>  
+        <script src="js/common/common.js" type="text/javascript"></script>
+        <script src="js/common/constants.js" type="text/javascript"></script>
+        <script src="js/common/dataStorage.js" type="text/javascript"></script>
+        
+		
+    </head>
+    
+    <body>
+        <!--Page start-->
+        <div data-role="page" id="delegationPage" data-tap-toggle="false" data-dom-cache="true">
+		
+            <!--Side Menu-->
+            <div class="overlay" data-role="panel" id="overlayPanel" data-display="overlay"> 
+                <div class="logo">
+					<div id="agentDetails">
+                <div class="agent font20px"></div>
+						<div class="journey font18px"></div>
+						<div class="weekDate font17px"></div>
+					</div>
+                </div>
+                <ul class="menu" data-role="listview" style="">
+                    <li id="menuDashboard" class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = 'dashboard.html'"><img id="dashboardIcon" src="css/themes/images/icons-png/dashboard-icon-custom.png"/><span class="menuItems font17px">Dashboard</span></li>
+                    <li id="menuSyncData" class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" ><img id="syncIcon" src="css/themes/images/icons-png/sync-icon.png"/><span class="menuItems font17px">Sync Data</span></li>
+					<li id="menuSelectJourney" class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" ><img id="selectIcon" src="css/themes/images/icons-png/select_icon.png"/><span class="menuItems font17px">Select Journey</span></li>
+					<li id="menuDelegateCust" class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" onclick="window.location.href = 'customerDelegation.html'"><img id="newDelegateIcon" src="css/themes/images/icons-png/share_icon.png"/><span class="menuItems font17px">New Delegation</span></li>
+					<li id="menuViewDelegation" class="menu ui-btn-c ui-alt-icon ui-icon-carat-r ui-btn-icon-right ui-shadow ui-corner-all" ><img id="viewDelegateIcon" src="css/themes/images/icons-png/view-delegation-icon.png"/><span class="menuItems font17px">View Delegation</span></li>
+                </ul> 
+                <div id="version" class="font14px"></div>   
+            </div>
+			
+            <!--Page header-->
+            <div data-role="header" class="customheader" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+              <h1>JOURNEY SELECTION</h1>
+              <a href="#overlayPanel" data-transition="pop" data-rel="popup" data-icon="bars" data-role="button" data-position-to="#menu" data-inline="true" data-theme="g" class="ui-link ui-btn ui-btn-g ui-alt-icon ui-icon-bars ui-btn-icon-notext ui-btn-inline"></a>
+              <a href="" data-role="button" data-inline="true" data-theme="g" class="dashboardIcon ui-link ui-btn ui-btn-g ui-alt-icon ui-btn-icon-notext ui-btn-inline"><img class="dashboardIcon" src="css/themes/images/icons-png/dashboard-icon-custom.png" alt=""/></a>
+            </div>
+            
+        <img src="img/382.gif" id="loading-indicator" style="display:none"/>
+		<div id="disablingDiv"></div>
+            <!--Page body-->
+            <div data-role="main" class="ui-content">
+				<ul id="journeyList" data-role="listview" data-split-theme="b">
+					<li id="primary" data-icon="false"><span id="journeyIndicator" class="primaryJourney">P</span><a href="#"><span id="journeyDesc"></span>&nbsp;-&nbsp;<span id="primaryAgentName"></span></a></li>
+					
+				</ul>
+				<div class="pageFooter ui-footer ui-bar-inherit ui-footer-fixed" data-role="footer" data-position="fixed" data-tap-toggle="false">
+				</div>    
+            </div>
+            <!--Page footer-->
+            
+        </div>
+        <!--Page end-->
+		
+		<script src="js/lib/dateFormatter.js" type="text/javascript"></script>
+		<script src="js/common/callService.js" type="text/javascript"></script>
+		<script src="js/saveTransactions.js" type="text/javascript"></script>
+		<script src="js/syncData.js" type="text/javascript"></script>
+		<script src="js/journeySelection.js" type="text/javascript"></script>
+        <img src="img/382.gif" id="loading-indicator" style="display:none" />
+		<div id="disablingDiv" ></div>
+		
+    </body>
+</html>

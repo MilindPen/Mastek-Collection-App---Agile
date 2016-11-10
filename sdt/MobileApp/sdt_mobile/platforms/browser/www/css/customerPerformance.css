@@ -1,0 +1,438 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Feb, 2016, 11:41:23 AM
+    Author     : Dharav12871
+*/
+
+body.ui-mobile-viewport{
+    overflow: hidden;
+}
+
+.ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-c{
+    padding-right:10px !important;
+}
+
+.contact1, .contact2{
+    display: inline-block;
+    width: 100%;
+}
+
+.contact1 .ui-input-text, .contact2 .ui-input-text{
+    width: 80%;
+    float: left;
+    border:none;
+}
+h1{
+font-size :1.125em;
+}
+
+
+.address{
+    width: 100%;
+}
+
+.address .ui-input-text{
+    float:left;
+    width: 80%;
+    border: none;
+    padding: 0px;
+    word-break: normal;
+}
+
+.email .ui-input-text, .journey-info .ui-input-text{
+    border: none;
+}
+
+.addr{
+    display: inline-block;
+    
+}
+li > h2, li > div > h2{
+    color:black;
+    font-weight:normal !important
+}
+
+span.tenure{
+    float:right;
+	font-size:1.05em!important;
+}
+span.esb{
+    color:#1f9bde;
+    float:right;
+}
+span.totalColl{
+    font-weight:normal;
+}
+span.total{
+    float:right;
+    font-weight:bold;
+    line-height: 20px;
+}
+#dashBtnEdit{
+    margin-top:-10px;
+}
+
+div.btngroup{
+    background-color: #c5c5c5 !important;
+    padding-top: 8px;
+    padding-right: 14px;
+    margin-top: -10px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0px;
+    padding-bottom: 4px;
+}
+
+div.collection-day{
+    display: inline-block; 
+    float: left; 
+    width:60%;
+}
+
+div.journey-info{
+    display: inline-block; 
+    float: left; 
+    width:40%;
+}
+
+.ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset{
+    margin-bottom:-8px;   
+}
+
+.ui-corner-all{
+    border-radius: 0px;
+}
+
+.ui-btn{
+    font-weight: normal;
+}
+
+#dashBtnEdit>.ui-btn{
+    font-size: 16px;
+}
+
+.loanlist-payment{
+    padding-top: 13px;
+    color: #7a7a7a;
+    padding-bottom: 4px;
+}
+
+.ui-overlay-d{
+    background-color: #000;
+}
+
+.toggle-heading{
+    font-weight: normal;
+    outline: transparent;
+}
+
+.performanceIndicator{
+    font-size: 15px;
+}
+
+.input-group{
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.input-left{
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 28.1875px;
+    font-size: 23px;
+    border: 1px solid black;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ebebeb !important;
+    color: #7a7a7a;
+    height: 28.5938px;
+    
+}
+.input-right{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 0px;
+    top: 7px;
+}
+
+.ui-input-text{
+    margin: 0px;
+}
+
+.input-group .ui-input-text{
+    margin: 0em;
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 35.4688px;
+    z-index: 3;
+}
+
+.ui-shadow-inset{
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+/*panel content body border*/
+.ui-collapsible-themed-content.ui-collapsible-inset .ui-collapsible-content, .ui-collapsible-inset .ui-collapsible-heading .ui-btn{
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.walkOrder>.ui-select>.ui-btn{
+    border: none;
+    height:6px;
+    line-height: 12px;
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.walkOrder>.ui-select .ui-btn > span:not(.ui-li-count){
+    margin-left:-12px;
+    height: 16px;
+}
+
+html .ui-body-c .ui-btn:hover, html .ui-body-c .ui-btn:hover{
+    background-color: #f4f4f4;
+    border: 1px solid #000;
+    border-left: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/*.ui-bar-h {background-color: white;color: black;text-shadow: none;border: none;padding-bottom: 10px;border-radius: 10px;}*/
+
+span.contactIcon, span.addressIcon{
+    float: right;
+    border: 0px;
+    padding-right: 10px;
+    margin-top: -3px;
+}
+
+span.addressIcon img, span.contactIcon img{
+    height:22px;
+}
+
+span.contactIcon img.landline-img{
+    height: 17px;
+    width: 17px;
+    margin-top: 2px;   
+}
+
+div.contact2 span.contactIcon{
+    margin-top:2px;
+}
+
+.ui-listview > .ui-li-static, .ui-listview > .ui-li-divider, .ui-listview > li > a.ui-btn{
+    text-overflow: none;
+    white-space: normal;    
+    word-break: break-all;
+    line-height: 120%;
+    border-width: 0 0 1px 0;
+}
+
+.fullName{
+    font-weight: bold;
+    display:inline;
+    line-height: 20px;
+	float:left;
+	font-family:Arial;
+	font-size:1.25em;
+	color:black!important;
+}
+
+.cust-header{
+    display: inline;
+    height: 20px;
+    word-break: break-word;
+    display: table-cell;
+    padding: 4% 0;
+}
+
+.ui-listview > .ui-last-child.ui-li-static{
+border-bottom-width: 0px;
+}
+
+.email .ui-input-text input, .contact1 .ui-input-text input, .contact2 .ui-input-text input, .journey-info .ui-input-text input{
+    padding: 0px;
+    min-height: 0px;
+}
+
+.journey-info .ui-input-text input{
+    padding-top: 1px;
+}
+
+.ui-select {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.walkOrder .ui-select .ui-btn{
+    text-align: left;
+}
+
+.piGreen{color: #14970d;}
+.piAmber{color: #ffb44f;}
+.piRed{color: #f3413f;
+}
+
+.ui-state-disabled, .ui-select .ui-btn.ui-state-disabled{
+    opacity: 1.0;
+}
+.contact1, .contactNumber{
+    color: #0d9ae2 !important;
+}
+.contact1 .ui-input-text input, .contact2 .ui-input-text input{
+	width: 92px;
+}
+
+html head + body .ui-btn.ui-btn-f:hover {
+    background-color: #e5f4ff /*{f-bhover-background-color}*/;
+}
+
+.ui-listview > li h2{
+    margin: 0px;
+}
+
+/*Carat Icons Modification */
+.ui-alt-icon .ui-icon-carat-u:after{
+    background-image: url("themes/images/icons-png/carat-u-black.png")
+}
+.ui-alt-icon .ui-icon-carat-d:after{
+    background-image: url("themes/images/icons-png/carat-d-black.png")
+}
+
+div.loanlist-folio, div.loanlist-arrears-esb{
+    color: #000;
+	height: 2em;
+}
+
+span.folio strong{
+    color: #1f9bde;
+}
+
+span.custNumber
+{
+color:black!important;
+font-size: 1em;
+}
+
+
+
+input.actualPay{
+    display: inline-block;
+    font-size: 14px;
+    color: #939393;
+    padding-bottom: 0.3em;
+}
+
+.ui-input-text .ui-mini input{
+    font-size: 16px;
+}
+
+.input-group>.ui-select>.ui-btn{
+    border: 1px solid #000;
+    height: 9px;
+    border-left: none;
+    background-color: #f4f4f4;
+}
+
+span.payment-cmbbox{
+    color: transparent;
+}
+
+div.loanList>.ui-collapsible-content{
+    max-height: calc(100vh - 379px);
+    min-height: calc(100vh - 379px);
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*Footer*/
+.ui-page-theme-a .ui-bar-inherit{
+    background-color: #e2e2e2;
+}
+
+.custFooter .footer-btngroup{
+    background-color: #c5c5c5;
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-right: 13px;
+    margin-bottom: 9px;
+}
+
+.ui-footer button.ui-btn {
+    width: 100%;
+}
+
+#footer-dashBtn1 .ui-btn, #footer-dashBtn2 .ui-btn{
+    font-size: 16px;
+}
+#footer-dashBtn2 .ui-btn{
+    margin-top: 0px;
+}
+
+div#listPaymentDues{
+    margin-left: 9px;
+    margin-right: 9px;
+    border: 0;
+    padding: 1em 1em;
+}
+div.elapsedWeeks{
+	display: inline;
+    float: right;
+    padding-right: 0.2em!;
+	font-size:1.05em;
+}
+.list
+{
+font-size:1.05em !important;
+}
+
+span.loanlist-folio{
+font-size:1.05em;
+}
+
+div.loanIndication{
+width:14px;
+height:12px;
+display:inline-block;
+border-radius: 3px;
+margin-right: 2px;
+vertical-align: middle;
+}
+
+.defaultColor{
+color:#e8f5fc;}
+
+.loanIndicatorGreen{background-color: #14970d;}
+.loanIndicatorAmber{background-color: #ffb44f;}
+.loanIndicatorRed{background-color: #f3413f;}
+
+.lastTransaction{color: #1f9bde !important;
+    font-weight: normal !important;
+    text-decoration: none;
+	font-size:1.05em;
+}
+#payPerformance
+{
+left: 6px;
+position: relative;
+top: 3px;
+}

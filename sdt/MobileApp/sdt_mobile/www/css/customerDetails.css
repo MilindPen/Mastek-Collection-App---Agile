@@ -1,0 +1,663 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Feb, 2016, 11:41:23 AM
+    Author     : Dharav12871
+*/
+
+body.ui-mobile-viewport{
+    overflow: hidden;
+}
+
+.ui-corner-all{
+	border-radius: 0px;
+}
+.ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-c{
+    padding-right:10px !important;
+}
+
+.contact1, .contact2{
+    display: inline-block;
+    width: 100%;
+}
+
+.contact1 .ui-input-text, .contact2 .ui-input-text{
+    width: 80%;
+    float: left;
+    border:none;
+}
+
+
+.address{
+    width: 100%;
+}
+
+.address .ui-input-text{
+    float:left;
+    width: 80%;
+    border: none;
+    padding: 0px;
+    word-break: normal;
+}
+
+.email .ui-input-text, .journey-info .ui-input-text{
+    border: none;
+}
+
+.addr{
+    display: inline-block;
+    
+}
+li > h2, li > div > h2{
+    color:black;
+    font-weight:normal !important
+}
+
+span.tenure{
+    float:right;
+}
+span.esb{
+    color:#1f9bde;
+    float:right;
+}
+span.totalColl{
+    font-weight:normal;
+}
+span.total{
+    float:right;
+    font-weight:bold;
+    line-height: 20px;
+}
+#dashBtnEdit{
+    margin-top:-10px;
+}
+
+#dashBtnSave{
+    margin-top:-10px;
+}
+
+div.btngroup{
+    background-color: #c5c5c5 !important;
+    padding-top: 8px;
+    padding-right: 14px;
+    margin-top: -10px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0px;
+    padding-bottom: 4px;
+}
+
+div.collection-day{
+    display: inline-block; 
+    float: left; 
+    width:60%;
+}
+
+div.journey-info{
+    display: inline-block; 
+    float: left; 
+    width:40%;
+}
+
+.ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset{
+    margin-bottom:-8px;   
+}
+
+
+.ui-btn{
+    font-weight: normal !important;
+}
+
+#dashBtnEdit>.ui-btn{
+    font-size: 16px;
+}
+
+.loanlist-payment{
+    padding-top: 13px;
+    color: #7a7a7a;
+    padding-bottom: 4px;
+}
+
+.ui-overlay-d{
+    background-color: #000;
+}
+
+.toggle-heading{
+    font-weight: normal;
+    outline: transparent;
+}
+
+.input-group{
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.input-left{
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 28.1875px;
+    font-size: 23px;
+    border: 1px solid #464646;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ebebeb !important;
+    color: #7a7a7a;
+    height: 28.5938px;
+    
+}
+.input-right{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 0px;
+    top: 7px;
+}
+
+.ui-input-text{
+    margin: 0px;
+}
+
+.input-group .ui-input-text{
+    margin: 0em;
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    z-index: 3;
+}
+
+.ui-shadow-inset{
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+/*panel content body border*/
+.ui-collapsible-themed-content.ui-collapsible-inset .ui-collapsible-content, .ui-collapsible-inset .ui-collapsible-heading .ui-btn{
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.walkOrder>.ui-select>.ui-btn{
+    border: none;
+    height:6px;
+    line-height: 12px;
+    padding-top: 4px;
+    padding-left: 12px;
+}
+
+.walkOrder>.ui-select .ui-btn > span:not(.ui-li-count){
+    margin-left:-12px;
+    height: 16px;
+}
+
+html .ui-body-c .ui-btn:hover, html .ui-body-c .ui-btn:hover{
+    background-color: #f4f4f4;
+    border: 1px solid #000;
+    border-left: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/*.ui-bar-h {background-color: white;color: black;text-shadow: none;border: none;padding-bottom: 10px;border-radius: 10px;}*/
+
+span.contactIcon, span.addressIcon{
+    float: right;
+    border: 0px;
+    padding-right: 10px;
+    margin-top: -3px;
+}
+
+span.addressIcon img, span.contactIcon img{
+    height:22px;
+}
+
+span.contactIcon img.landline-img{
+    height: 17px;
+    width: 17px;
+    margin-top: 2px;   
+}
+
+div.contact2 span.contactIcon{
+    margin-top:2px;
+}
+
+.ui-listview > .ui-li-static, .ui-listview > .ui-li-divider, .ui-listview > li > a.ui-btn{
+    text-overflow: none;
+    white-space: normal;    
+    word-break: break-all;
+    line-height: 120%;
+    border-width: 0 0 1px 0;
+}
+
+.fullName{
+    font-size: 18px; 
+    font-weight: bold;
+    display:inline;
+    line-height: 20px;
+}
+
+.cust-header{
+    display: inline;
+    height: 20px;
+    word-break: break-word;
+    display: table-cell;
+    padding: 4% 0;
+}
+
+.ui-listview > .ui-last-child.ui-li-static{
+border-bottom-width: 0px;
+}
+
+.email .ui-input-text input, .contact1 .ui-input-text input, .contact2 .ui-input-text input, .journey-info .ui-input-text input{
+    padding: 0px;
+    min-height: 0px;
+}
+
+.journey-info .ui-input-text input{
+    padding-top: 1px;
+}
+
+.ui-select {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.walkOrder .ui-select .ui-btn{
+    text-align: left;
+}
+
+.performanceIndicator{
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    padding: 1px 2px 1px 2px;
+    font-size: 15px;
+}
+
+.piGreen{color: #14970d;}
+.piAmber{color: #ffb44f;}
+.piRed{color: #f3413f;
+}
+
+.ui-state-disabled, .ui-select .ui-btn.ui-state-disabled{
+    opacity: 1.0;
+}
+.contact1, .contactNumber{
+    color: #0d9ae2 !important;
+}
+.contact1 .ui-input-text input, .contact2 .ui-input-text input{
+       width: 110px;
+}
+
+html head + body .ui-btn.ui-btn-f:hover {
+    background-color: #e5f4ff /*{f-bhover-background-color}*/;
+}
+
+.ui-listview > li h2{
+    margin: 0px;
+}
+
+/*Carat Icons Modification */
+.ui-alt-icon .ui-icon-carat-u:after{
+    background-image: url("themes/images/icons-png/carat-u-black.png")
+}
+.ui-alt-icon .ui-icon-carat-d:after{
+    background-image: url("themes/images/icons-png/carat-d-black.png")
+}
+
+div.loanlist-folio, div.loanlist-arrears-esb{
+    color: #000;
+}
+
+span.folio strong{
+    color: #1f9bde;
+}
+
+input.actualPay{
+    display: inline-block;
+    font-size: 14px;
+    color: #939393;
+    padding-bottom: 0.3em;
+}
+
+.ui-input-text .ui-mini input{
+    font-size: 16px;
+}
+
+.input-group>.ui-select>.ui-btn{
+    border: 1px solid #464646;
+    height: 9px;
+    border-left: none;
+    background-color: #f4f4f4;
+}
+
+span.payment-cmbbox{
+    color: transparent;
+}
+
+div.loanList>.ui-collapsible-content{
+    max-height: calc(100vh - 379px);
+    min-height: calc(100vh - 379px);
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+/*Footer*/
+.ui-page-theme-a .ui-bar-inherit{
+    background-color: #e2e2e2;
+}
+
+.custFooter .footer-btngroup{
+    background-color: #c5c5c5;
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-right: 13px;
+    margin-bottom: 9px;
+}
+
+.ui-footer button.ui-btn {
+    width: 100%;
+}
+
+#footer-dashBtn1 .ui-btn, #footer-dashBtn2 .ui-btn{
+    font-size: 16px;
+}
+#footer-dashBtn2 .ui-btn{
+    margin-top: 0px;
+}
+
+div#listPaymentDues{
+    margin-left: 9px;
+    margin-right: 9px;
+    border: 0;
+    padding: 1em 1em;
+}
+div#callOutComePopup{
+       border-radius: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+p{ text-align: center}
+
+
+/* a:hover {
+    background-color:transparent !important;
+       border-color:transparent !important;
+} */
+.ui-overlay-b{background-color: #000000}
+
+label.loanlist-folio{
+font-size:1.05em;
+}
+
+label.esb-msg
+{
+font-size:0.8em!important;
+color :black;
+display:inline;
+}
+
+li.msg
+{
+background-color:#fcf9e8!important;
+}
+
+li.esbAmt
+{
+background-color:#f5f5f5!important;
+}
+
+label.check
+{
+font-size:1em!important;
+color :black;
+}
+
+img.note
+{
+height:8px;
+width :8px;
+display:inline-block;
+}
+div.imagemsg{
+display:inline-block;
+margin-left: -14px;
+}
+
+#callESBPopup{
+min-width: calc(100vw - 50px);
+border-radius: 5px;}
+
+
+
+div.loanlist-folio{
+    color: #000;
+       
+}
+
+span.loanlist-folio
+{
+font-family:Arial;
+}
+
+span.plussymbol
+{
+color:green;
+}
+
+span.minussymbol
+{
+color:red;
+}
+
+.esb-popupbtn{
+    width: 50% !important;
+}
+
+.esb-btninline{
+    font-weight: normal !important;
+	width:50% !important;
+    
+}
+.plussymbol,.minussymbol
+{
+  right: 80px;
+    float: right;
+    position: absolute;
+}
+.amountValue{
+       display: inline-block;
+    width: 60px;
+    float: right;
+}
+
+.loanlist-folio-buttons{
+    height: 40px;
+       }
+
+.ui-alt-icon .ui-icon-delete:after{
+    background-image:url("themes/images/icons-png/delete-blue.png");
+    margin-top: -11px;
+    margin-left: -11px;
+    border: none;
+}
+.ui-alt-icon ui-popup ui-body-c ui-overlay-shadow ui-corner-all{
+           border-radius: 10px !important;   
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active{
+       background-color: white !important;
+       color: #1f9bde !important;
+       
+}
+li.esblist-popup{
+    color: #000;
+/*    height:2em;      */
+}
+li.esblist-popup-foliono
+{
+    background-color: #e8f5fc;
+       color: #000;
+/*    height:2em;      */
+/*    padding-bottom: 3px;*/
+       }
+
+html head + body .ui-btn.ui-btn-a{
+    border-color: transparent;
+}
+       
+li.esblist-popup-up{
+/*    margin-bottom:13px;*/
+       color: #000;
+}
+
+ li.esblist-popup-low{
+/*    margin-bottom:13px;*/
+    color: #000;
+/*    margin-top:10px;*/
+}
+
+.ui-body-d{
+	border-width: 0px;
+}    
+  
+
+/*div.foliono-esb{
+ padding-top: 3px;
+ background-color: #e8f5fc;
+ height: 19px;
+}*/
+.ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right:after{
+	background-color: white !important;
+}li.esblist-popup-button
+{
+margin-bottom: -10px !important;
+margin-top: -4px !important;	
+}
+.ui-grid-b
+{
+text-align: center !important;
+ margin-left: 53px !important;	
+}
+
+div.ui-block-a, div.ui-block-b, .esb-popupbtn
+{
+text-align: center !important;
+    margin-right: -29px!important;	
+}
+
+.inputTextEditChange
+{
+color:black !important;
+}
+.address, .editContact1, .editContact2, .editEmail
+{
+margin-top:8px;
+}
+#editCity
+{
+float:left;
+}
+#editPostcode{
+    float: right;
+}
+cityaddressline{
+    float: right;
+}
+.textBoxChanges{
+color:#939393;
+padding-left: 5px !important;
+border: 1px solid #464646;
+background-color: #f4f4f4;
+border-radius: 0px;
+}
+.contact1 .ui-input-text input.textBoxContacts, .contact2 .ui-input-text input.textBoxContacts
+{
+padding-left: 5px !important;
+width:110px !important;
+}
+.textBoxChangesEmail
+{
+padding-left: 5px !important;
+width:220px !important;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+    border: 1px solid #464646;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+input[type="checkbox"]:checked + label#chkboxlabel:after {
+    content: '✔';
+    display: inline-block;
+    font-size: 13px;
+    position: absolute;
+    left: 1px;
+    top: -9px;
+}
+
+div.checkbox-input{
+    display: inline-block;
+    float: left;
+    padding-top:6px;
+}
+div.checkbox-label{
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+}
+
+li#esblist{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 280px;
+}
+li#esblist li{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 2em;
+}
+li#esblist li *{
+    line-height: 2em;
+}
+
+div#callESBPopup>.ui-btn, div#callESBPopup>.ui-btn:hover, div.esb-popupbtn>.ui-btn:active, div#callOutComePopup>.ui-btn, div#callOutComePopup>.ui-btn:hover, div.callOutComePopup>.ui-btn:active{
+        border: 2px solid #e2e2e2;
+}
+
+div.esb-popupbtn>.ui-btn:hover{
+    border: none;
+}
+div.esb-popupbtn>.ui-btn:active{
+    border: none;
+    background-color: #ffffff;
+}
+
+ul#callOutComeList>li.ui-last-child>.ui-btn{
+    border: none;
+}

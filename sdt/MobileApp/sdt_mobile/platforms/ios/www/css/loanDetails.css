@@ -1,0 +1,25 @@
+
+.ui-li-aside{
+	right: 1em !important;
+	top: 0.7em !important;
+}
+
+.ui-li-border{
+	border-color: #ffffff !important;
+}
+
+.ui-li-highlighted{
+	background-color:#e8f5fc !important;
+}
+
+a{
+	text-decoration:none;
+}
+.ui-body-c {
+    
+    border: none !important;
+	margin-top: 0.5em
+	}
+td,th{
+padding-left: 14px !important;
+}
